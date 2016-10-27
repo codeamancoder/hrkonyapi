@@ -1,0 +1,2653 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ER Leaf\n"
+"POT-Creation-Date: 2013-10-16 00:31+0700\n"
+"PO-Revision-Date: 2014-02-19 23:34+0200\n"
+"Last-Translator: \n"
+"Language-Team: EverisLabs <support@everislabs.com>\n"
+"Language: en_EN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.4\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: 404.php:9 ../er-leaf/404.php:9
+msgid "404"
+msgstr ""
+
+#: 404.php:11 ../er-leaf/404.php:11
+msgid "The page you are trying looking for is not avaiable."
+msgstr "Bulunamadı"
+
+#: 404.php:15 ../er-leaf/404.php:15
+msgid "Search"
+msgstr "Arama"
+
+#: comments.php:11 ../er-leaf/comments.php:11
+#: ../inovado/framework/inc/cpt-portfolio.php:64
+#: ../inovado/framework/inc/shortcodes.php:1276
+#: ../inovado/framework/inc/shortcodes.php:1376
+msgid "Comments"
+msgstr "Yorumlar"
+
+#: comments.php:15 comments.php:44 ../er-leaf/comments.php:15
+#: ../er-leaf/comments.php:44
+msgid "Add your comment"
+msgstr "Yorum Ekle"
+
+#: comments.php:28 ../er-leaf/comments.php:28
+#: ../twentythirteen/comments.php:46 ../twentytwelve/comments.php:43
+msgid "&larr; Older Comments"
+msgstr "Önceki Yorumlar"
+
+#: comments.php:29 ../er-leaf/comments.php:29
+#: ../twentythirteen/comments.php:47 ../twentytwelve/comments.php:44
+msgid "Newer Comments &rarr;"
+msgstr "Sonraki Yorumlar"
+
+#: comments.php:34 ../er-leaf/comments.php:34 ../inovado/comments.php:39
+#: ../twentythirteen/comments.php:52 ../twentytwelve/comments.php:53
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:54 ../er-leaf/comments.php:54 ../inovado/comments.php:55
+msgid "Name (required)"
+msgstr "İsim"
+
+#: comments.php:56 ../er-leaf/comments.php:56 ../inovado/comments.php:57
+msgid "E-Mail (required)"
+msgstr "E-Mail"
+
+#: comments.php:58 ../er-leaf/comments.php:58 ../inovado/comments.php:59
+msgid "Website"
+msgstr "Website"
+
+#: comments.php:67 ../er-leaf/comments.php:67 ../inovado/comments.php:67
+msgid "Submit comment"
+msgstr "Gönder"
+
+#: content-blog.php:9 content-blog.php:18 header.php:63
+#: framework/posts.php:280 ../er-leaf/content-blog.php:9
+#: ../er-leaf/content-blog.php:18 ../er-leaf/header.php:63
+#: ../er-leaf/framework/posts.php:280
+msgid "Permalink to: "
+msgstr ""
+
+#: content-blog.php:18 ../er-leaf/content-blog.php:18
+msgid "Read More"
+msgstr "Devamı"
+
+#: functions.php:59 ../er-leaf/functions.php:59
+#: ../twentythirteen/functions.php:93
+msgid "Navigation Menu"
+msgstr ""
+
+#: functions.php:60 ../er-leaf/functions.php:60
+msgid "Footer Menu"
+msgstr ""
+
+#: functions.php:136 ../er-leaf/functions.php:136
+#: ../twentythirteen/functions.php:212 ../twentytwelve/functions.php:213
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: functions.php:150 ../er-leaf/functions.php:150
+msgid "Default Sidebar Widget Area"
+msgstr ""
+
+#: functions.php:152 ../er-leaf/functions.php:152
+msgid "Appears in sidebar area."
+msgstr ""
+
+#: functions.php:160 ../er-leaf/functions.php:160
+msgid "Top Bar 1"
+msgstr ""
+
+#: functions.php:162 functions.php:172 functions.php:182 functions.php:192
+#: ../er-leaf/functions.php:162 ../er-leaf/functions.php:172
+#: ../er-leaf/functions.php:182 ../er-leaf/functions.php:192
+msgid "Appears in top header area."
+msgstr ""
+
+#: functions.php:170 ../er-leaf/functions.php:170
+msgid "Top Bar 2"
+msgstr ""
+
+#: functions.php:180 ../er-leaf/functions.php:180
+msgid "Top Bar 3"
+msgstr ""
+
+#: functions.php:190 ../er-leaf/functions.php:190
+msgid "Top Bar 4"
+msgstr ""
+
+#: functions.php:200 ../er-leaf/functions.php:200
+msgid "Footer 1"
+msgstr ""
+
+#: functions.php:202 functions.php:212 functions.php:222 functions.php:232
+#: ../er-leaf/functions.php:202 ../er-leaf/functions.php:212
+#: ../er-leaf/functions.php:222 ../er-leaf/functions.php:232
+msgid "Appears in footer area."
+msgstr ""
+
+#: functions.php:210 ../er-leaf/functions.php:210
+msgid "Footer 2"
+msgstr ""
+
+#: functions.php:220 ../er-leaf/functions.php:220
+msgid "Footer 3"
+msgstr ""
+
+#: functions.php:230 ../er-leaf/functions.php:230
+msgid "Footer 4"
+msgstr ""
+
+#: header.php:56 ../er-leaf/header.php:56
+msgid "Company News:"
+msgstr ""
+
+#: heading.php:31 ../er-leaf/heading.php:31 ../twentythirteen/archive.php:29
+#: ../twentytwelve/archive.php:29
+#, php-format
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: heading.php:33 ../er-leaf/heading.php:33 ../twentythirteen/archive.php:31
+#: ../twentytwelve/archive.php:31
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: heading.php:35 ../er-leaf/heading.php:35 ../twentythirteen/archive.php:33
+#: ../twentytwelve/archive.php:33
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: heading.php:39 ../er-leaf/heading.php:39 ../twentythirteen/category.php:19
+#: ../twentytwelve/category.php:21
+#, php-format
+msgid "Category Archives: %s"
+msgstr ""
+
+#: heading.php:41 ../er-leaf/heading.php:41 ../twentythirteen/tag.php:21
+#: ../twentytwelve/tag.php:21
+#, php-format
+msgid "Tag Archives: %s"
+msgstr ""
+
+#: heading.php:43 ../er-leaf/heading.php:43 ../twentythirteen/search.php:18
+#: ../twentytwelve/search.php:18
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: heading.php:45 ../er-leaf/heading.php:45
+#, php-format
+msgid "Portfolio Archives: %s"
+msgstr ""
+
+#: heading.php:47 ../er-leaf/heading.php:47 ../twentythirteen/archive.php:35
+#: ../twentytwelve/archive.php:35
+msgid "Archives"
+msgstr ""
+
+#: page-portfolio.php:22 page.php:37 single.php:26
+#: ../er-leaf/page-portfolio.php:22 ../er-leaf/page.php:37
+#: ../er-leaf/single.php:26 ../twentythirteen/content-aside.php:14
+#: ../twentythirteen/content-audio.php:25
+#: ../twentythirteen/content-chat.php:24
+#: ../twentythirteen/content-gallery.php:25
+#: ../twentythirteen/content-image.php:24
+#: ../twentythirteen/content-link.php:25
+#: ../twentythirteen/content-quote.php:14
+#: ../twentythirteen/content-status.php:14
+#: ../twentythirteen/content-video.php:24 ../twentythirteen/content.php:40
+#: ../twentythirteen/image.php:70 ../twentythirteen/page.php:35
+#: ../twentytwelve/content-page.php:21 ../twentytwelve/content.php:40
+#: ../twentytwelve/image.php:92
+msgid "Pages:"
+msgstr ""
+
+#: page-portfolio.php:35 ../er-leaf/page-portfolio.php:35
+#: ../inovado/page-portfolio-col1.php:37 ../inovado/page-portfolio-col2.php:37
+#: ../inovado/page-portfolio-col3.php:37 ../inovado/page-portfolio-col4.php:37
+msgid "All"
+msgstr ""
+
+#: page.php:40 framework/posts.php:61 ../er-leaf/page.php:40
+#: ../er-leaf/framework/posts.php:61 ../twentythirteen/content-aside.php:20
+#: ../twentythirteen/content-aside.php:28
+#: ../twentythirteen/content-audio.php:31
+#: ../twentythirteen/content-chat.php:29
+#: ../twentythirteen/content-gallery.php:39
+#: ../twentythirteen/content-image.php:35
+#: ../twentythirteen/content-link.php:19
+#: ../twentythirteen/content-quote.php:25
+#: ../twentythirteen/content-status.php:19
+#: ../twentythirteen/content-video.php:35 ../twentythirteen/content.php:29
+#: ../twentythirteen/image.php:44 ../twentythirteen/page.php:39
+#: ../twentytwelve/content-aside.php:26 ../twentytwelve/content-image.php:26
+#: ../twentytwelve/content-link.php:24 ../twentytwelve/content-page.php:24
+#: ../twentytwelve/content-quote.php:23 ../twentytwelve/content-status.php:30
+#: ../twentytwelve/content.php:46 ../twentytwelve/functions.php:341
+#: ../twentytwelve/image.php:37
+msgid "Edit"
+msgstr "Düzenle"
+
+#: single-portfolio.php:32 ../er-leaf/single-portfolio.php:32
+msgid "Project description"
+msgstr ""
+
+#: single-portfolio.php:39 ../er-leaf/single-portfolio.php:39
+msgid "Project details"
+msgstr ""
+
+#: single-portfolio.php:44 framework/portfolio.php:60
+#: ../er-leaf/single-portfolio.php:44 ../er-leaf/framework/portfolio.php:60
+msgid "Categories"
+msgstr ""
+
+#: single-portfolio.php:52 framework/portfolio.php:86
+#: ../er-leaf/single-portfolio.php:52 ../er-leaf/framework/portfolio.php:86
+#: ../inovado/page-sitemap.php:50
+#: ../inovado/framework/inc/portfolio/sidebyside.php:67
+#: ../inovado/framework/inc/portfolio/wide.php:60
+msgid "Tags"
+msgstr ""
+
+#: single-portfolio.php:61 framework/metabox.php:246
+#: ../er-leaf/single-portfolio.php:61 ../er-leaf/framework/metabox.php:246
+msgid "Release Date"
+msgstr ""
+
+#: single-portfolio.php:72 framework/metabox.php:222
+#: ../er-leaf/single-portfolio.php:72 ../er-leaf/framework/metabox.php:222
+#: ../inovado/framework/inc/cpt-portfolio.php:63
+msgid "Author"
+msgstr ""
+
+#: single-portfolio.php:83 framework/metabox.php:230
+#: ../er-leaf/single-portfolio.php:83 ../er-leaf/framework/metabox.php:230
+msgid "Partner"
+msgstr ""
+
+#: single-portfolio.php:94 framework/metabox.php:238
+#: ../er-leaf/single-portfolio.php:94 ../er-leaf/framework/metabox.php:238
+msgid "Customer"
+msgstr ""
+
+#: single-portfolio.php:111 framework/metabox.php:201
+#: ../er-leaf/single-portfolio.php:111 ../er-leaf/framework/metabox.php:201
+msgid "Project Detail"
+msgstr ""
+
+#: single-portfolio.php:133 ../er-leaf/single-portfolio.php:133
+msgid "Recent Projects"
+msgstr ""
+
+#: top-widget.php:46 ../er-leaf/top-widget.php:46
+msgid "Open"
+msgstr ""
+
+#: framework/menu-icon.php:109 ../er-leaf/framework/menu-icon.php:109
+#, php-format
+msgid "%s (Invalid)"
+msgstr ""
+
+#: framework/menu-icon.php:113 ../er-leaf/framework/menu-icon.php:113
+#, php-format
+msgid "%s (Pending)"
+msgstr ""
+
+#: framework/menu-icon.php:154 ../er-leaf/framework/menu-icon.php:154
+msgid "Edit Menu Item"
+msgstr ""
+
+#: framework/menu-icon.php:163 framework/meta-box/demo/demo.php:258
+#: framework/post-format/views/format-link.php:2
+#: ../er-leaf/framework/menu-icon.php:163
+#: ../er-leaf/framework/meta-box/demo/demo.php:258
+#: ../er-leaf/framework/post-format/views/format-link.php:2
+msgid "URL"
+msgstr ""
+
+#: framework/menu-icon.php:170 ../er-leaf/framework/menu-icon.php:170
+msgid "Navigation Label"
+msgstr ""
+
+#: framework/menu-icon.php:176 ../er-leaf/framework/menu-icon.php:176
+msgid "Title Attribute"
+msgstr ""
+
+#: framework/menu-icon.php:183 ../er-leaf/framework/menu-icon.php:183
+msgid "Open link in a new window/tab"
+msgstr ""
+
+#: framework/menu-icon.php:188 ../er-leaf/framework/menu-icon.php:188
+msgid "CSS Classes (optional)"
+msgstr ""
+
+#: framework/menu-icon.php:194 ../er-leaf/framework/menu-icon.php:194
+msgid "Link Relationship (XFN)"
+msgstr ""
+
+#: framework/menu-icon.php:200 ../er-leaf/framework/menu-icon.php:200
+msgid "Description"
+msgstr ""
+
+#: framework/menu-icon.php:202 ../er-leaf/framework/menu-icon.php:202
+msgid ""
+"The description will be displayed in the menu if the current theme supports "
+"it."
+msgstr ""
+
+#: framework/menu-icon.php:212 framework/tinymce/shortcodes-generator.php:77
+#: ../er-leaf/framework/menu-icon.php:212
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:77
+msgid "Icon"
+msgstr ""
+
+#: framework/menu-icon.php:224 ../er-leaf/framework/menu-icon.php:224
+#, php-format
+msgid "Original: %s"
+msgstr ""
+
+#: framework/menu-icon.php:237 ../er-leaf/framework/menu-icon.php:237
+msgid "Remove"
+msgstr ""
+
+#: framework/menu-icon.php:238 ../er-leaf/framework/menu-icon.php:238
+msgid "Cancel"
+msgstr ""
+
+#: framework/metabox.php:28 ../er-leaf/framework/metabox.php:28
+msgid "Custom Heading"
+msgstr ""
+
+#: framework/metabox.php:37 ../er-leaf/framework/metabox.php:37
+msgid "Heading Background Image"
+msgstr ""
+
+#: framework/metabox.php:43 ../er-leaf/framework/metabox.php:43
+msgid "Custom Heading Title"
+msgstr ""
+
+#: framework/metabox.php:48 ../er-leaf/framework/metabox.php:48
+msgid "Custom Heading HTML Code"
+msgstr ""
+
+#: framework/metabox.php:66 ../er-leaf/framework/metabox.php:66
+msgid "Slider Infomations"
+msgstr ""
+
+#: framework/metabox.php:75 ../er-leaf/framework/metabox.php:75
+msgid "Slide Description"
+msgstr ""
+
+#: framework/metabox.php:79 ../er-leaf/framework/metabox.php:79
+msgid "Edit slide description here ..."
+msgstr ""
+
+#: framework/metabox.php:87 ../er-leaf/framework/metabox.php:87
+msgid "Slide URL"
+msgstr ""
+
+#: framework/metabox.php:89 ../er-leaf/framework/metabox.php:89
+msgid "URL of current slide"
+msgstr ""
+
+#: framework/metabox.php:100 ../er-leaf/framework/metabox.php:100
+msgid "Custom Page Settings"
+msgstr ""
+
+#: framework/metabox.php:109 ../er-leaf/framework/metabox.php:109
+msgid "Choose page with & sidebar"
+msgstr ""
+
+#: framework/metabox.php:113 ../er-leaf/framework/metabox.php:113
+msgid "Right sidebar"
+msgstr ""
+
+#: framework/metabox.php:114 ../er-leaf/framework/metabox.php:114
+msgid "Left Sidebar"
+msgstr ""
+
+#: framework/metabox.php:115 ../er-leaf/framework/metabox.php:115
+msgid "Full Width"
+msgstr ""
+
+#: framework/metabox.php:123 ../er-leaf/framework/metabox.php:123
+msgid "Show Page Heading"
+msgstr ""
+
+#: framework/metabox.php:130 ../er-leaf/framework/metabox.php:130
+msgid "Show Page Title"
+msgstr ""
+
+#: framework/metabox.php:137 ../er-leaf/framework/metabox.php:137
+msgid "Show Page Share"
+msgstr ""
+
+#: framework/metabox.php:149 ../er-leaf/framework/metabox.php:149
+msgid ""
+"Portfolio Page Option (Only apply when select Portfolio Filter Page "
+"Templates)"
+msgstr ""
+
+#: framework/metabox.php:158 ../er-leaf/framework/metabox.php:158
+msgid "Choose portfolio column item"
+msgstr ""
+
+#: framework/metabox.php:162 ../er-leaf/framework/metabox.php:162
+msgid "4 Columns"
+msgstr ""
+
+#: framework/metabox.php:163 ../er-leaf/framework/metabox.php:163
+msgid "3 Columns"
+msgstr ""
+
+#: framework/metabox.php:164 ../er-leaf/framework/metabox.php:164
+msgid "2 Columns"
+msgstr ""
+
+#: framework/metabox.php:172 ../er-leaf/framework/metabox.php:172
+msgid "Items per page"
+msgstr ""
+
+#: framework/metabox.php:179 ../er-leaf/framework/metabox.php:179
+msgid "Enable Filter"
+msgstr ""
+
+#: framework/metabox.php:191 ../er-leaf/framework/metabox.php:191
+msgid "Portfolio Infomations"
+msgstr ""
+
+#: framework/metabox.php:205 ../er-leaf/framework/metabox.php:205
+msgid "Content"
+msgstr ""
+
+#: framework/metabox.php:209 ../er-leaf/framework/metabox.php:209
+msgid "Edit project detail here ..."
+msgstr ""
+
+#: framework/metabox.php:218 ../er-leaf/framework/metabox.php:218
+msgid "Project Infomations"
+msgstr ""
+
+#: framework/metabox.php:224 ../er-leaf/framework/metabox.php:224
+msgid "Author of project"
+msgstr ""
+
+#: framework/metabox.php:232 ../er-leaf/framework/metabox.php:232
+msgid "Your Partner"
+msgstr ""
+
+#: framework/metabox.php:240 ../er-leaf/framework/metabox.php:240
+msgid "Your Customer"
+msgstr ""
+
+#: framework/metabox.php:248 ../er-leaf/framework/metabox.php:248
+msgid "Project Release Date"
+msgstr ""
+
+#: framework/metabox.php:254 ../er-leaf/framework/metabox.php:254
+msgid "Project Link"
+msgstr ""
+
+#: framework/metabox.php:256 ../er-leaf/framework/metabox.php:256
+msgid "URL of your project"
+msgstr ""
+
+#: framework/metabox.php:261 ../er-leaf/framework/metabox.php:261
+msgid "Cusom Field"
+msgstr ""
+
+#: framework/metabox.php:263 ../er-leaf/framework/metabox.php:263
+msgid "Add your custom field"
+msgstr ""
+
+#: framework/metabox.php:269 ../er-leaf/framework/metabox.php:269
+msgid "Project Images"
+msgstr ""
+
+#: framework/metabox.php:273 ../er-leaf/framework/metabox.php:273
+msgid "Upload your project images"
+msgstr ""
+
+#: framework/plugin-activation.php:164
+#: ../er-leaf/framework/plugin-activation.php:164 ../inovado/functions.php:138
+#: ../inovado/framework/inc/plugin-activation.php:164
+msgid "Install Required Plugins"
+msgstr ""
+
+#: framework/plugin-activation.php:165
+#: ../er-leaf/framework/plugin-activation.php:165 ../inovado/functions.php:139
+#: ../inovado/framework/inc/plugin-activation.php:165
+msgid "Install Plugins"
+msgstr ""
+
+#: framework/plugin-activation.php:166
+#: ../er-leaf/framework/plugin-activation.php:166 ../inovado/functions.php:140
+#: ../inovado/framework/inc/plugin-activation.php:166
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: framework/plugin-activation.php:167
+#: ../er-leaf/framework/plugin-activation.php:167
+#: ../inovado/framework/inc/plugin-activation.php:167
+msgid "Something went wrong."
+msgstr ""
+
+#: framework/plugin-activation.php:178 framework/plugin-activation.php:490
+#: ../er-leaf/framework/plugin-activation.php:178
+#: ../er-leaf/framework/plugin-activation.php:490 ../inovado/functions.php:152
+#: ../inovado/framework/inc/plugin-activation.php:178
+#: ../inovado/framework/inc/plugin-activation.php:490
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: framework/plugin-activation.php:179 framework/plugin-activation.php:1846
+#: ../er-leaf/framework/plugin-activation.php:179
+#: ../er-leaf/framework/plugin-activation.php:1846
+#: ../inovado/functions.php:153
+#: ../inovado/framework/inc/plugin-activation.php:179
+#: ../inovado/framework/inc/plugin-activation.php:1846
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: framework/plugin-activation.php:180
+#: ../er-leaf/framework/plugin-activation.php:180
+#: ../inovado/framework/inc/plugin-activation.php:180
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: framework/plugin-activation.php:517 framework/plugin-activation.php:2058
+#: ../er-leaf/framework/plugin-activation.php:517
+#: ../er-leaf/framework/plugin-activation.php:2058
+#: ../inovado/framework/inc/plugin-activation.php:517
+#: ../inovado/framework/inc/plugin-activation.php:2058
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: framework/plugin-activation.php:545
+#: ../er-leaf/framework/plugin-activation.php:545
+#: ../inovado/framework/inc/plugin-activation.php:545
+#, php-format
+msgid "The following plugin was activated successfully: %s."
+msgstr ""
+
+#: framework/plugin-activation.php:704
+#: ../er-leaf/framework/plugin-activation.php:704
+#: ../inovado/framework/inc/plugin-activation.php:704
+msgid "Dismiss this notice"
+msgstr ""
+
+#: framework/plugin-activation.php:1091
+#: ../er-leaf/framework/plugin-activation.php:1091
+#: ../inovado/framework/inc/plugin-activation.php:1091
+msgid "External Link"
+msgstr ""
+
+#: framework/plugin-activation.php:1096
+#: ../er-leaf/framework/plugin-activation.php:1096
+#: ../inovado/framework/inc/plugin-activation.php:1096
+msgid "Private Repository"
+msgstr ""
+
+#: framework/plugin-activation.php:1099
+#: ../er-leaf/framework/plugin-activation.php:1099
+#: ../inovado/framework/inc/plugin-activation.php:1099
+msgid "Pre-Packaged"
+msgstr ""
+
+#: framework/plugin-activation.php:1103
+#: ../er-leaf/framework/plugin-activation.php:1103
+#: ../inovado/framework/inc/plugin-activation.php:1103
+msgid "WordPress Repository"
+msgstr ""
+
+#: framework/plugin-activation.php:1106
+#: ../er-leaf/framework/plugin-activation.php:1106
+#: ../inovado/framework/inc/plugin-activation.php:1106
+msgid "Required"
+msgstr ""
+
+#: framework/plugin-activation.php:1106
+#: ../er-leaf/framework/plugin-activation.php:1106
+#: ../inovado/framework/inc/plugin-activation.php:1106
+msgid "Recommended"
+msgstr ""
+
+#: framework/plugin-activation.php:1109
+#: ../er-leaf/framework/plugin-activation.php:1109
+#: ../inovado/framework/inc/plugin-activation.php:1109
+msgid "Not Installed"
+msgstr ""
+
+#: framework/plugin-activation.php:1111
+#: ../er-leaf/framework/plugin-activation.php:1111
+#: ../inovado/framework/inc/plugin-activation.php:1111
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: framework/plugin-activation.php:1281
+#: ../er-leaf/framework/plugin-activation.php:1281
+#: ../inovado/framework/inc/plugin-activation.php:1281
+#, php-format
+msgid ""
+"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+"Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+
+#: framework/plugin-activation.php:1297
+#: ../er-leaf/framework/plugin-activation.php:1297
+#: ../inovado/framework/inc/plugin-activation.php:1297
+msgid "Plugin"
+msgstr ""
+
+#: framework/plugin-activation.php:1298
+#: ../er-leaf/framework/plugin-activation.php:1298
+#: ../inovado/framework/inc/plugin-activation.php:1298
+msgid "Source"
+msgstr ""
+
+#: framework/plugin-activation.php:1299
+#: ../er-leaf/framework/plugin-activation.php:1299
+#: ../inovado/framework/inc/plugin-activation.php:1299
+msgid "Type"
+msgstr ""
+
+#: framework/plugin-activation.php:1300
+#: ../er-leaf/framework/plugin-activation.php:1300
+#: ../inovado/framework/inc/plugin-activation.php:1300
+msgid "Status"
+msgstr ""
+
+#: framework/plugin-activation.php:1318
+#: ../er-leaf/framework/plugin-activation.php:1318
+#: ../inovado/framework/inc/plugin-activation.php:1318
+msgid "Install"
+msgstr ""
+
+#: framework/plugin-activation.php:1319
+#: ../er-leaf/framework/plugin-activation.php:1319
+#: ../inovado/framework/inc/plugin-activation.php:1319
+msgid "Activate"
+msgstr ""
+
+#: framework/plugin-activation.php:1829
+#: ../er-leaf/framework/plugin-activation.php:1829
+#: ../inovado/framework/inc/plugin-activation.php:1829
+msgid "Install package not available."
+msgstr ""
+
+#: framework/plugin-activation.php:1830
+#: ../er-leaf/framework/plugin-activation.php:1830
+#: ../inovado/framework/inc/plugin-activation.php:1830
+#, php-format
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr ""
+
+#: framework/plugin-activation.php:1831
+#: ../er-leaf/framework/plugin-activation.php:1831
+#: ../inovado/framework/inc/plugin-activation.php:1831
+msgid "Unpacking the package&#8230;"
+msgstr ""
+
+#: framework/plugin-activation.php:1832
+#: ../er-leaf/framework/plugin-activation.php:1832
+#: ../inovado/framework/inc/plugin-activation.php:1832
+msgid "Installing the plugin&#8230;"
+msgstr ""
+
+#: framework/plugin-activation.php:1833
+#: ../er-leaf/framework/plugin-activation.php:1833
+#: ../inovado/framework/inc/plugin-activation.php:1833
+msgid "Plugin install failed."
+msgstr ""
+
+#: framework/plugin-activation.php:1834
+#: ../er-leaf/framework/plugin-activation.php:1834
+#: ../inovado/framework/inc/plugin-activation.php:1834
+msgid "Plugin installed successfully."
+msgstr ""
+
+#: framework/plugin-activation.php:1845
+#: ../er-leaf/framework/plugin-activation.php:1845
+#: ../inovado/framework/inc/plugin-activation.php:1845
+msgid "Plugin activation failed."
+msgstr ""
+
+#: framework/plugin-activation.php:1955
+#: ../er-leaf/framework/plugin-activation.php:1955
+#: ../inovado/framework/inc/plugin-activation.php:1955
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: framework/plugin-activation.php:1956
+#: ../er-leaf/framework/plugin-activation.php:1956
+#: ../inovado/framework/inc/plugin-activation.php:1956
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: framework/plugin-activation.php:1956 framework/plugin-activation.php:1965
+#: ../er-leaf/framework/plugin-activation.php:1956
+#: ../er-leaf/framework/plugin-activation.php:1965
+#: ../inovado/framework/inc/plugin-activation.php:1956
+#: ../inovado/framework/inc/plugin-activation.php:1965
+msgid "Show Details"
+msgstr ""
+
+#: framework/plugin-activation.php:1956 framework/plugin-activation.php:1965
+#: ../er-leaf/framework/plugin-activation.php:1956
+#: ../er-leaf/framework/plugin-activation.php:1965
+#: ../inovado/framework/inc/plugin-activation.php:1956
+#: ../inovado/framework/inc/plugin-activation.php:1965
+msgid "Hide Details"
+msgstr ""
+
+#: framework/plugin-activation.php:1957
+#: ../er-leaf/framework/plugin-activation.php:1957
+#: ../inovado/framework/inc/plugin-activation.php:1957
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: framework/plugin-activation.php:1958
+#: ../er-leaf/framework/plugin-activation.php:1958
+#: ../inovado/framework/inc/plugin-activation.php:1958
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: framework/plugin-activation.php:1962
+#: ../er-leaf/framework/plugin-activation.php:1962
+#: ../inovado/framework/inc/plugin-activation.php:1962
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: framework/plugin-activation.php:1963
+#: ../er-leaf/framework/plugin-activation.php:1963
+#: ../inovado/framework/inc/plugin-activation.php:1963
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: framework/plugin-activation.php:1964
+#: ../er-leaf/framework/plugin-activation.php:1964
+#: ../inovado/framework/inc/plugin-activation.php:1964
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: framework/plugin-activation.php:1965
+#: ../er-leaf/framework/plugin-activation.php:1965
+#: ../inovado/framework/inc/plugin-activation.php:1965
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: framework/plugin-activation.php:1966
+#: ../er-leaf/framework/plugin-activation.php:1966
+#: ../inovado/framework/inc/plugin-activation.php:1966
+msgid "All installations have been completed."
+msgstr ""
+
+#: framework/plugin-activation.php:1967
+#: ../er-leaf/framework/plugin-activation.php:1967
+#: ../inovado/framework/inc/plugin-activation.php:1967
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: framework/portfolio.php:19 framework/portfolio.php:20
+#: framework/portfolio.php:31 framework/tinymce/shortcodes-generator.php:86
+#: ../er-leaf/framework/portfolio.php:19 ../er-leaf/framework/portfolio.php:20
+#: ../er-leaf/framework/portfolio.php:31
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:86
+#: ../inovado/framework/inc/cpt-portfolio.php:24
+msgid "Portfolio"
+msgstr ""
+
+#: framework/portfolio.php:21 framework/slider.php:11
+#: ../er-leaf/framework/portfolio.php:21 ../er-leaf/framework/slider.php:11
+msgid "Add New"
+msgstr ""
+
+#: framework/portfolio.php:22 ../er-leaf/framework/portfolio.php:22
+msgid "Add New Project"
+msgstr ""
+
+#: framework/portfolio.php:23 ../er-leaf/framework/portfolio.php:23
+msgid "Edit Project"
+msgstr ""
+
+#: framework/portfolio.php:24 ../er-leaf/framework/portfolio.php:24
+msgid "New Project"
+msgstr ""
+
+#: framework/portfolio.php:25 ../er-leaf/framework/portfolio.php:25
+msgid "All Projects"
+msgstr ""
+
+#: framework/portfolio.php:26 ../er-leaf/framework/portfolio.php:26
+msgid "View Project"
+msgstr ""
+
+#: framework/portfolio.php:27 ../er-leaf/framework/portfolio.php:27
+msgid "Search Project"
+msgstr ""
+
+#: framework/portfolio.php:28 ../er-leaf/framework/portfolio.php:28
+msgid "No projects found"
+msgstr ""
+
+#: framework/portfolio.php:29 ../er-leaf/framework/portfolio.php:29
+msgid "No projects found in Trash"
+msgstr ""
+
+#: framework/portfolio.php:61 framework/portfolio.php:70
+#: ../er-leaf/framework/portfolio.php:61 ../er-leaf/framework/portfolio.php:70
+msgid "Category"
+msgstr ""
+
+#: framework/portfolio.php:62 ../er-leaf/framework/portfolio.php:62
+msgid "Search Categories"
+msgstr ""
+
+#: framework/portfolio.php:63 ../er-leaf/framework/portfolio.php:63
+msgid "All Categories"
+msgstr ""
+
+#: framework/portfolio.php:64 ../er-leaf/framework/portfolio.php:64
+msgid "Parent Category"
+msgstr ""
+
+#: framework/portfolio.php:65 ../er-leaf/framework/portfolio.php:65
+msgid "Parent Category:"
+msgstr ""
+
+#: framework/portfolio.php:66 ../er-leaf/framework/portfolio.php:66
+msgid "Edit Category"
+msgstr ""
+
+#: framework/portfolio.php:67 ../er-leaf/framework/portfolio.php:67
+msgid "Update Category"
+msgstr ""
+
+#: framework/portfolio.php:68 ../er-leaf/framework/portfolio.php:68
+msgid "Add New Category"
+msgstr ""
+
+#: framework/portfolio.php:69 ../er-leaf/framework/portfolio.php:69
+msgid "New Category Name"
+msgstr ""
+
+#: framework/portfolio.php:87 framework/portfolio.php:96
+#: ../er-leaf/framework/portfolio.php:87 ../er-leaf/framework/portfolio.php:96
+msgid "Tag"
+msgstr ""
+
+#: framework/portfolio.php:88 ../er-leaf/framework/portfolio.php:88
+msgid "Search Tags"
+msgstr ""
+
+#: framework/portfolio.php:89 ../er-leaf/framework/portfolio.php:89
+msgid "All Tags"
+msgstr ""
+
+#: framework/portfolio.php:90 ../er-leaf/framework/portfolio.php:90
+msgid "Parent Tag"
+msgstr ""
+
+#: framework/portfolio.php:91 ../er-leaf/framework/portfolio.php:91
+msgid "Parent Tag:"
+msgstr ""
+
+#: framework/portfolio.php:92 ../er-leaf/framework/portfolio.php:92
+msgid "Edit Tag"
+msgstr ""
+
+#: framework/portfolio.php:93 ../er-leaf/framework/portfolio.php:93
+msgid "Update Tag"
+msgstr ""
+
+#: framework/portfolio.php:94 ../er-leaf/framework/portfolio.php:94
+msgid "Add New Tag"
+msgstr ""
+
+#: framework/portfolio.php:95 ../er-leaf/framework/portfolio.php:95
+msgid "New Tag Name"
+msgstr ""
+
+#: framework/posts.php:49 framework/shortcodes.php:957
+#: ../er-leaf/framework/posts.php:49 ../er-leaf/framework/shortcodes.php:957
+#: ../twentythirteen/functions.php:345 ../twentytwelve/functions.php:378
+#, php-format
+msgid "View all posts by %s"
+msgstr ""
+
+#: framework/posts.php:128 ../er-leaf/framework/posts.php:128
+msgid "You may also interested"
+msgstr ""
+
+#: framework/posts.php:155 ../er-leaf/framework/posts.php:155
+msgid "Share this"
+msgstr ""
+
+#: framework/posts.php:248 ../er-leaf/framework/posts.php:248
+#: ../inovado/functions.php:178
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: framework/posts.php:250 ../er-leaf/framework/posts.php:250
+#: ../inovado/functions.php:180 ../twentytwelve/functions.php:330
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: framework/posts.php:252 ../er-leaf/framework/posts.php:252
+#: ../inovado/functions.php:180 ../twentytwelve/functions.php:309
+msgid "(Edit)"
+msgstr ""
+
+#: framework/posts.php:258 ../er-leaf/framework/posts.php:258
+#: ../inovado/functions.php:188 ../twentytwelve/functions.php:336
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: framework/slider.php:9 framework/slider.php:10
+#: ../er-leaf/framework/slider.php:9 ../er-leaf/framework/slider.php:10
+msgid "Slide"
+msgstr ""
+
+#: framework/slider.php:12 ../er-leaf/framework/slider.php:12
+msgid "Add New Slide"
+msgstr ""
+
+#: framework/slider.php:13 ../er-leaf/framework/slider.php:13
+msgid "Edit Slide"
+msgstr ""
+
+#: framework/slider.php:14 ../er-leaf/framework/slider.php:14
+msgid "New Slide"
+msgstr ""
+
+#: framework/slider.php:15 ../er-leaf/framework/slider.php:15
+msgid "All Slides"
+msgstr ""
+
+#: framework/slider.php:16 ../er-leaf/framework/slider.php:16
+msgid "View Slide"
+msgstr ""
+
+#: framework/slider.php:17 ../er-leaf/framework/slider.php:17
+msgid "Search Slide"
+msgstr ""
+
+#: framework/slider.php:18 ../er-leaf/framework/slider.php:18
+msgid "No slides found"
+msgstr ""
+
+#: framework/slider.php:19 ../er-leaf/framework/slider.php:19
+msgid "No slides found in Trash"
+msgstr ""
+
+#: framework/slider.php:21 framework/meta-box/demo/demo.php:152
+#: framework/tinymce/shortcodes-generator.php:87
+#: ../er-leaf/framework/slider.php:21
+#: ../er-leaf/framework/meta-box/demo/demo.php:152
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:87
+msgid "Slider"
+msgstr ""
+
+#: framework/widgets.php:23 ../er-leaf/framework/widgets.php:23
+msgid "Displays Feedburner email subscribe form"
+msgstr ""
+
+#: framework/widgets.php:26 ../er-leaf/framework/widgets.php:26
+msgid "ER Leaf - eNews and Updates"
+msgstr ""
+
+#: framework/widgets.php:72 framework/widgets.php:181
+#: ../er-leaf/framework/widgets.php:72 ../er-leaf/framework/widgets.php:181
+msgid "Title"
+msgstr ""
+
+#: framework/widgets.php:77 ../er-leaf/framework/widgets.php:77
+msgid "Text To Show"
+msgstr ""
+
+#: framework/widgets.php:82 ../er-leaf/framework/widgets.php:82
+msgid "Google/Feedburner ID"
+msgstr ""
+
+#: framework/widgets.php:87 ../er-leaf/framework/widgets.php:87
+msgid "Your Email"
+msgstr ""
+
+#: framework/widgets.php:88 ../er-leaf/framework/widgets.php:88
+msgid "Input Text"
+msgstr ""
+
+#: framework/widgets.php:93 ../er-leaf/framework/widgets.php:93
+msgid "Go"
+msgstr ""
+
+#: framework/widgets.php:94 ../er-leaf/framework/widgets.php:94
+msgid "Button Text"
+msgstr ""
+
+#: framework/widgets.php:187 ../er-leaf/framework/widgets.php:187
+msgid "Flickr ID"
+msgstr ""
+
+#: framework/widgets.php:193 ../er-leaf/framework/widgets.php:193
+msgid "Number of images to show"
+msgstr ""
+
+#: framework/widgets.php:200 ../er-leaf/framework/widgets.php:200
+msgid "Display in Lightbox?"
+msgstr ""
+
+#: framework/widgets.php:205 ../er-leaf/framework/widgets.php:205
+msgid "Cache interval in seconds"
+msgstr ""
+
+#: framework/widgets.php:227 ../er-leaf/framework/widgets.php:227
+msgid "Shows recent portfolio images in sidebar."
+msgstr ""
+
+#: framework/widgets.php:229 ../er-leaf/framework/widgets.php:229
+msgid "ER Leaf - Recent Projects"
+msgstr ""
+
+#: framework/widgets.php:291 framework/widgets.php:406
+#: framework/widgets.php:490 framework/widgets.php:544
+#: framework/widgets.php:600 ../er-leaf/framework/widgets.php:291
+#: ../er-leaf/framework/widgets.php:406 ../er-leaf/framework/widgets.php:490
+#: ../er-leaf/framework/widgets.php:544 ../er-leaf/framework/widgets.php:600
+msgid "Title:"
+msgstr ""
+
+#: framework/widgets.php:294 ../er-leaf/framework/widgets.php:294
+msgid "Number of projects to show:"
+msgstr ""
+
+#: framework/widgets.php:298 framework/widgets.php:413
+#: ../er-leaf/framework/widgets.php:298 ../er-leaf/framework/widgets.php:413
+msgid "Categories:"
+msgstr ""
+
+#: framework/widgets.php:334 ../er-leaf/framework/widgets.php:334
+msgid "Shows recent posts in sidebar."
+msgstr ""
+
+#: framework/widgets.php:336 ../er-leaf/framework/widgets.php:336
+msgid "ER Leaf - Recent Posts"
+msgstr ""
+
+#: framework/widgets.php:409 ../er-leaf/framework/widgets.php:409
+msgid "Number of posts to show:"
+msgstr ""
+
+#: framework/widgets.php:448 ../er-leaf/framework/widgets.php:448
+msgid "Shows category listing in sidebar."
+msgstr ""
+
+#: framework/widgets.php:450 ../er-leaf/framework/widgets.php:450
+msgid "ER Leaf - Category List"
+msgstr ""
+
+#: framework/widgets.php:470 ../er-leaf/framework/widgets.php:470
+#, php-format
+msgid "View all posts in %s"
+msgstr ""
+
+#: framework/widgets.php:506 ../er-leaf/framework/widgets.php:506
+msgid "Display contact infomations"
+msgstr ""
+
+#: framework/widgets.php:508 ../er-leaf/framework/widgets.php:508
+msgid "ER Leaf - Contact Info"
+msgstr ""
+
+#: framework/widgets.php:547 ../er-leaf/framework/widgets.php:547
+msgid "Address:"
+msgstr ""
+
+#: framework/widgets.php:550 ../er-leaf/framework/widgets.php:550
+msgid "Phone:"
+msgstr ""
+
+#: framework/widgets.php:553 ../er-leaf/framework/widgets.php:553
+msgid "Fax:"
+msgstr ""
+
+#: framework/widgets.php:556 ../er-leaf/framework/widgets.php:556
+msgid "Email:"
+msgstr ""
+
+#: framework/widgets.php:559 ../er-leaf/framework/widgets.php:559
+msgid "Website:"
+msgstr ""
+
+#: framework/widgets.php:574 ../er-leaf/framework/widgets.php:574
+msgid "Display video in Widget"
+msgstr ""
+
+#: framework/widgets.php:576 ../er-leaf/framework/widgets.php:576
+msgid "ER Leaf - Video Embed"
+msgstr ""
+
+#: framework/widgets.php:603 ../er-leaf/framework/widgets.php:603
+msgid "Video Embed Code:"
+msgstr ""
+
+#: framework/admin/classes/class.options_machine.php:979
+#: ../er-leaf/framework/admin/classes/class.options_machine.php:979
+#: ../inovado/admin/classes/class.options_machine.php:982
+msgid "Last Backup : "
+msgstr ""
+
+#: framework/admin/classes/class.options_machine.php:1039
+#: ../er-leaf/framework/admin/classes/class.options_machine.php:1039
+#: ../inovado/admin/classes/class.options_machine.php:1042
+msgid "Upload"
+msgstr ""
+
+#: framework/admin/front-end/options.php:43
+#: framework/admin/front-end/options.php:67
+#: ../er-leaf/framework/admin/front-end/options.php:43
+#: ../er-leaf/framework/admin/front-end/options.php:67
+#: ../inovado/admin/front-end/options.php:43
+#: ../inovado/admin/front-end/options.php:67
+msgid "Save All Changes"
+msgstr ""
+
+#: framework/admin/front-end/options.php:68
+#: ../er-leaf/framework/admin/front-end/options.php:68
+#: ../inovado/admin/front-end/options.php:68
+msgid "Options Reset"
+msgstr ""
+
+#: framework/admin/functions/functions.mediauploader.php:20
+#: ../er-leaf/framework/admin/functions/functions.mediauploader.php:20
+#: ../inovado/admin/functions/functions.mediauploader.php:20
+msgid "Options"
+msgstr ""
+
+#: framework/admin/functions/functions.mediauploader.php:210
+#: ../er-leaf/framework/admin/functions/functions.mediauploader.php:210
+#: ../inovado/admin/functions/functions.mediauploader.php:210
+msgid "Gallery"
+msgstr ""
+
+#: framework/admin/functions/functions.mediauploader.php:210
+#: ../er-leaf/framework/admin/functions/functions.mediauploader.php:210
+#: ../inovado/admin/functions/functions.mediauploader.php:210
+msgid "Previously Uploaded"
+msgstr ""
+
+#: framework/meta-box/demo/all-custom-post-types.php:20
+#: ../er-leaf/framework/meta-box/demo/all-custom-post-types.php:20
+msgid "Personal Information"
+msgstr ""
+
+#: framework/meta-box/demo/all-custom-post-types.php:25
+#: ../er-leaf/framework/meta-box/demo/all-custom-post-types.php:25
+msgid "Full name"
+msgstr ""
+
+#: framework/meta-box/demo/better-include.php:16
+#: framework/meta-box/demo/include-by-ID-or-page-template.php:8
+#: ../er-leaf/framework/meta-box/demo/better-include.php:16
+#: ../er-leaf/framework/meta-box/demo/include-by-ID-or-page-template.php:8
+msgid "Meta Box Title"
+msgstr ""
+
+#: framework/meta-box/demo/better-include.php:19
+#: framework/meta-box/demo/include-by-ID-or-page-template.php:14
+#: ../er-leaf/framework/meta-box/demo/better-include.php:19
+#: ../er-leaf/framework/meta-box/demo/include-by-ID-or-page-template.php:14
+msgid "Your images"
+msgstr ""
+
+#: framework/meta-box/demo/date-time-js-options.php:11
+#: ../er-leaf/framework/meta-box/demo/date-time-js-options.php:11
+msgid "Date Time Picker With JS Options"
+msgstr ""
+
+#: framework/meta-box/demo/date-time-js-options.php:15
+#: ../er-leaf/framework/meta-box/demo/date-time-js-options.php:15
+#: ../inovado/framework/inc/cpt-portfolio.php:65
+#: ../inovado/framework/inc/portfolio/sidebyside.php:66
+#: ../inovado/framework/inc/portfolio/wide.php:59
+msgid "Date"
+msgstr ""
+
+#: framework/meta-box/demo/date-time-js-options.php:21
+#: framework/meta-box/demo/demo.php:184
+#: ../er-leaf/framework/meta-box/demo/date-time-js-options.php:21
+#: ../er-leaf/framework/meta-box/demo/demo.php:184
+msgid "(yyyy-mm-dd)"
+msgstr ""
+
+#: framework/meta-box/demo/date-time-js-options.php:23
+#: ../er-leaf/framework/meta-box/demo/date-time-js-options.php:23
+msgid "Select Date"
+msgstr ""
+
+#: framework/meta-box/demo/date-time-js-options.php:24
+#: framework/meta-box/demo/demo.php:185
+#: ../er-leaf/framework/meta-box/demo/date-time-js-options.php:24
+#: ../er-leaf/framework/meta-box/demo/demo.php:185
+msgid "yy-mm-dd"
+msgstr ""
+
+#: framework/meta-box/demo/date-time-js-options.php:30
+#: ../er-leaf/framework/meta-box/demo/date-time-js-options.php:30
+msgid "Datetime"
+msgstr ""
+
+#: framework/meta-box/demo/date-time-js-options.php:41
+#: ../er-leaf/framework/meta-box/demo/date-time-js-options.php:41
+msgid "Time"
+msgstr ""
+
+#: framework/meta-box/demo/demo.php:34
+#: ../er-leaf/framework/meta-box/demo/demo.php:34
+msgid "Standard Fields"
+msgstr ""
+
+#: framework/meta-box/demo/demo.php:53
+#: ../er-leaf/framework/meta-box/demo/demo.php:53
+msgid "Text"
+msgstr ""
+
+#: framework/meta-box/demo/demo.php:57
+#: ../er-leaf/framework/meta-box/demo/demo.php:57
+msgid "Text description"
+msgstr ""
+
+#: framework/meta-box/demo/demo.php:60
+#: ../er-leaf/framework/meta-box/demo/demo.php:60
+msgid "Default text value"
+msgstr ""
+
+#: framework/meta-box/demo/demo.php:66
+#: ../er-leaf/framework/meta-box/demo/demo.php:66
+msgid "Checkbox"
+msgstr ""
+
+#: framework/meta-box/demo/demo.php:74
+#: ../er-leaf/framework/meta-box/demo/demo.php:74
+msgid "Radio"
+msgstr ""
+
+#: framework/meta-box/demo/demo.php:80 framework/meta-box/demo/demo.php:91
+#: framework/meta-box/demo/demo.php:233 framework/meta-box/demo/demo.php:278
+#: ../er-leaf/framework/meta-box/demo/demo.php:80
+#: ../er-leaf/framework/meta-box/demo/demo.php:91
+#: ../er-leaf/framework/meta-box/demo/demo.php:233
+#: ../er-leaf/framework/meta-box/demo/demo.php:278
+msgid "Label1"
+msgstr ""
+
+#: framework/meta-box/demo/demo.php:81 framework/meta-box/demo/demo.php:92
+#: framework/meta-box/demo/demo.php:234 framework/meta-box/demo/demo.php:279
+#: ../er-leaf/framework/meta-box/demo/demo.php:81
+#: ../er-leaf/framework/meta-box/demo/demo.php:92
+#: ../er-leaf/framework/meta-box/demo/demo.php:234
+#: ../er-leaf/framework/meta-box/demo/demo.php:279
+msgid "Label2"
+msgstr ""
+
+#: framework/meta-box/demo/demo.php:86 framework/meta-box/demo/demo.php:273
+#: ../er-leaf/framework/meta-box/demo/demo.php:86
+#: ../er-leaf/framework/meta-box/demo/demo.php:273
+msgid "Select"
+msgstr ""
+
+#: framework/meta-box/demo/demo.php:97 framework/meta-box/demo/demo.php:284
+#: ../er-leaf/framework/meta-box/demo/demo.php:97
+#: ../er-leaf/framework/meta-box/demo/demo.php:284
+msgid "Select an Item"
+msgstr ""
+
+#: framework/meta-box/demo/demo.php:104
+#: ../er-leaf/framework/meta-box/demo/demo.php:104
+msgid "Hidden value"
+msgstr ""
+
+#: framework/meta-box/demo/demo.php:108
+#: ../er-leaf/framework/meta-box/demo/demo.php:108
+msgid "Password"
+msgstr ""
+
+#: framework/meta-box/demo/demo.php:114
+#: ../er-leaf/framework/meta-box/demo/demo.php:114
+msgid "Textarea"
+msgstr ""
+
+#: framework/meta-box/demo/demo.php:115
+#: ../er-leaf/framework/meta-box/demo/demo.php:115
+msgid "Textarea description"
+msgstr ""
+
+#: framework/meta-box/demo/demo.php:132
+#: ../er-leaf/framework/meta-box/demo/demo.php:132
+msgid "Password is required"
+msgstr ""
+
+#: framework/meta-box/demo/demo.php:133
+#: ../er-leaf/framework/meta-box/demo/demo.php:133
+msgid "Password must be at least 7 characters"
+msgstr ""
+
+#: framework/meta-box/demo/demo.php:141
+#: ../er-leaf/framework/meta-box/demo/demo.php:141
+msgid "Advanced Fields"
+msgstr ""
+
+#: framework/meta-box/demo/demo.php:147
+#: framework/tinymce/shortcodes-generator.php:91
+#: ../er-leaf/framework/meta-box/demo/demo.php:147
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:91
+msgid "Heading"
+msgstr ""
+
+#: framework/meta-box/demo/demo.php:157
+#: ../er-leaf/framework/meta-box/demo/demo.php:157
+msgid "$"
+msgstr ""
+
+#: framework/meta-box/demo/demo.php:158
+#: ../er-leaf/framework/meta-box/demo/demo.php:158
+msgid " USD"
+msgstr ""
+
+#: framework/meta-box/demo/demo.php:169
+#: ../er-leaf/framework/meta-box/demo/demo.php:169
+msgid "Number"
+msgstr ""
+
+#: framework/meta-box/demo/demo.php:178
+#: ../er-leaf/framework/meta-box/demo/demo.php:178
+msgid "Date picker"
+msgstr ""
+
+#: framework/meta-box/demo/demo.php:193
+#: ../er-leaf/framework/meta-box/demo/demo.php:193
+msgid "Datetime picker"
+msgstr ""
+
+#: framework/meta-box/demo/demo.php:207
+#: ../er-leaf/framework/meta-box/demo/demo.php:207
+msgid "Time picker"
+msgstr ""
+
+#: framework/meta-box/demo/demo.php:222
+#: ../er-leaf/framework/meta-box/demo/demo.php:222
+msgid "Color picker"
+msgstr ""
+
+#: framework/meta-box/demo/demo.php:228
+#: ../er-leaf/framework/meta-box/demo/demo.php:228
+msgid "Checkbox list"
+msgstr ""
+
+#: framework/meta-box/demo/demo.php:239
+#: ../er-leaf/framework/meta-box/demo/demo.php:239
+msgid "Email"
+msgstr ""
+
+#: framework/meta-box/demo/demo.php:241
+#: ../er-leaf/framework/meta-box/demo/demo.php:241
+msgid "Email description"
+msgstr ""
+
+#: framework/meta-box/demo/demo.php:247
+#: ../er-leaf/framework/meta-box/demo/demo.php:247
+msgid "Range"
+msgstr ""
+
+#: framework/meta-box/demo/demo.php:249
+#: ../er-leaf/framework/meta-box/demo/demo.php:249
+msgid "Range description"
+msgstr ""
+
+#: framework/meta-box/demo/demo.php:260
+#: ../er-leaf/framework/meta-box/demo/demo.php:260
+msgid "URL description"
+msgstr ""
+
+#: framework/meta-box/demo/demo.php:266
+#: ../er-leaf/framework/meta-box/demo/demo.php:266
+msgid "oEmbed"
+msgstr ""
+
+#: framework/meta-box/demo/demo.php:268
+#: ../er-leaf/framework/meta-box/demo/demo.php:268
+msgid "oEmbed description"
+msgstr ""
+
+#: framework/meta-box/demo/demo.php:288
+#: ../er-leaf/framework/meta-box/demo/demo.php:288
+msgid "Taxonomy"
+msgstr ""
+
+#: framework/meta-box/demo/demo.php:302
+#: ../er-leaf/framework/meta-box/demo/demo.php:302
+msgid "Posts (Pages)"
+msgstr ""
+
+#: framework/meta-box/demo/demo.php:318
+#: ../er-leaf/framework/meta-box/demo/demo.php:318
+msgid "WYSIWYG / Rich Text Editor"
+msgstr ""
+
+#: framework/meta-box/demo/demo.php:323
+#: ../er-leaf/framework/meta-box/demo/demo.php:323
+msgid "WYSIWYG default value"
+msgstr ""
+
+#: framework/meta-box/demo/demo.php:339
+#: framework/meta-box/demo/force-delete.php:15
+#: ../er-leaf/framework/meta-box/demo/demo.php:339
+#: ../er-leaf/framework/meta-box/demo/force-delete.php:15
+msgid "File Upload"
+msgstr ""
+
+#: framework/meta-box/demo/demo.php:345
+#: ../er-leaf/framework/meta-box/demo/demo.php:345
+msgid "File Advanced Upload"
+msgstr ""
+
+#: framework/meta-box/demo/demo.php:353
+#: framework/meta-box/demo/force-delete.php:22
+#: ../er-leaf/framework/meta-box/demo/demo.php:353
+#: ../er-leaf/framework/meta-box/demo/force-delete.php:22
+msgid "Image Upload"
+msgstr ""
+
+#: framework/meta-box/demo/demo.php:359
+#: framework/meta-box/demo/force-delete.php:28
+#: ../er-leaf/framework/meta-box/demo/demo.php:359
+#: ../er-leaf/framework/meta-box/demo/force-delete.php:28
+msgid "Thickbox Image Upload"
+msgstr ""
+
+#: framework/meta-box/demo/demo.php:365
+#: framework/meta-box/demo/force-delete.php:35
+#: ../er-leaf/framework/meta-box/demo/demo.php:365
+#: ../er-leaf/framework/meta-box/demo/force-delete.php:35
+msgid "Plupload Image Upload"
+msgstr ""
+
+#: framework/meta-box/demo/demo.php:372
+#: ../er-leaf/framework/meta-box/demo/demo.php:372
+msgid "Image Advanced Upload"
+msgstr ""
+
+#: framework/meta-box/demo/force-delete.php:11
+#: ../er-leaf/framework/meta-box/demo/force-delete.php:11
+msgid "Test Meta Box"
+msgstr ""
+
+#: framework/meta-box/demo/map.php:9
+#: ../er-leaf/framework/meta-box/demo/map.php:9
+msgid "Google Map"
+msgstr ""
+
+#: framework/meta-box/demo/map.php:13
+#: ../er-leaf/framework/meta-box/demo/map.php:13
+msgid "Address"
+msgstr ""
+
+#: framework/meta-box/demo/map.php:15
+#: ../er-leaf/framework/meta-box/demo/map.php:15
+msgid "Hanoi, Vietnam"
+msgstr ""
+
+#: framework/meta-box/demo/map.php:19
+#: ../er-leaf/framework/meta-box/demo/map.php:19
+msgid "Location"
+msgstr ""
+
+#: framework/meta-box/inc/classes/meta-box.php:252
+#: ../er-leaf/framework/meta-box/inc/classes/meta-box.php:252
+#: ../inovado/framework/inc/meta-box/inc/classes/meta-box.php:284
+msgid "Please correct the errors highlighted below and try again."
+msgstr ""
+
+#: framework/meta-box/inc/classes/meta-box.php:426
+#: ../er-leaf/framework/meta-box/inc/classes/meta-box.php:426
+#: ../inovado/framework/inc/meta-box/inc/classes/meta-box.php:342
+msgid "+"
+msgstr ""
+
+#: framework/meta-box/inc/classes/meta-box.php:448
+#: ../er-leaf/framework/meta-box/inc/classes/meta-box.php:448
+#: ../inovado/framework/inc/meta-box/inc/classes/meta-box.php:364
+msgid "&#8211;"
+msgstr ""
+
+#: framework/meta-box/inc/fields/button.php:36
+#: ../er-leaf/framework/meta-box/inc/fields/button.php:36
+msgid "Click me"
+msgstr ""
+
+#: framework/meta-box/inc/fields/file-advanced.php:23
+#: ../er-leaf/framework/meta-box/inc/fields/file-advanced.php:23
+msgid "Select Files"
+msgstr ""
+
+#: framework/meta-box/inc/fields/file.php:19
+#: ../er-leaf/framework/meta-box/inc/fields/file.php:19
+#, php-format
+msgid "You may only upload maximum %d file"
+msgstr ""
+
+#: framework/meta-box/inc/fields/file.php:20
+#: ../er-leaf/framework/meta-box/inc/fields/file.php:20
+#, php-format
+msgid "You may only upload maximum %d files"
+msgstr ""
+
+#: framework/meta-box/inc/fields/file.php:70
+#: ../er-leaf/framework/meta-box/inc/fields/file.php:70
+#: ../inovado/framework/inc/meta-box/inc/fields/file.php:65
+msgid "Error: Cannot delete file"
+msgstr ""
+
+#: framework/meta-box/inc/fields/image-advanced.php:22
+#: ../er-leaf/framework/meta-box/inc/fields/image-advanced.php:22
+msgid "Select Images"
+msgstr ""
+
+#: framework/meta-box/inc/fields/image.php:64
+#: ../er-leaf/framework/meta-box/inc/fields/image.php:64
+#: ../inovado/framework/inc/meta-box/inc/fields/image.php:64
+msgid "Order saved"
+msgstr ""
+
+#: framework/meta-box/inc/fields/map.php:48
+#: ../er-leaf/framework/meta-box/inc/fields/map.php:48
+#: ../inovado/framework/inc/meta-box/inc/fields/map.php:46
+msgid "Find Address"
+msgstr ""
+
+#: framework/meta-box/inc/fields/post.php:54
+#: ../er-leaf/framework/meta-box/inc/fields/post.php:54
+msgid "Post"
+msgstr ""
+
+#: framework/meta-box/inc/fields/post.php:68
+#: framework/meta-box/inc/fields/taxonomy.php:40
+#: ../er-leaf/framework/meta-box/inc/fields/post.php:68
+#: ../er-leaf/framework/meta-box/inc/fields/taxonomy.php:40
+#, php-format
+msgid "Select a %s"
+msgstr ""
+
+#: framework/post-format/cf-post-formats.php:75
+#: ../er-leaf/framework/post-format/cf-post-formats.php:75
+msgid "Loading..."
+msgstr ""
+
+#: framework/post-format/views/format-audio.php:2
+#: ../er-leaf/framework/post-format/views/format-audio.php:2
+msgid "Audio URL (oEmbed) or Embed Code"
+msgstr ""
+
+#: framework/post-format/views/format-gallery.php:2
+#: ../er-leaf/framework/post-format/views/format-gallery.php:2
+msgid "Gallery Images"
+msgstr ""
+
+#: framework/post-format/views/format-gallery.php:26
+#: ../er-leaf/framework/post-format/views/format-gallery.php:26
+msgid "Upload Images"
+msgstr ""
+
+#: framework/post-format/views/format-quote.php:3
+#: ../er-leaf/framework/post-format/views/format-quote.php:3
+msgid "Source Name"
+msgstr ""
+
+#: framework/post-format/views/format-quote.php:7
+#: ../er-leaf/framework/post-format/views/format-quote.php:7
+msgid "Source URL"
+msgstr ""
+
+#: framework/post-format/views/format-video.php:2
+#: ../er-leaf/framework/post-format/views/format-video.php:2
+msgid "Video URL (oEmbed) or Embed Code"
+msgstr ""
+
+#: framework/post-format/views/tabs.php:9
+#: ../er-leaf/framework/post-format/views/tabs.php:9
+msgid "Standard"
+msgstr ""
+
+#: framework/tinymce/shortcodes-generator.php:44
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:44
+msgid "Columns"
+msgstr ""
+
+#: framework/tinymce/shortcodes-generator.php:45
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:45
+msgid "Elements"
+msgstr ""
+
+#: framework/tinymce/shortcodes-generator.php:46
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:46
+msgid "Helper"
+msgstr ""
+
+#: framework/tinymce/shortcodes-generator.php:48
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:48
+msgid "Columns Wrap"
+msgstr ""
+
+#: framework/tinymce/shortcodes-generator.php:49
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:49
+msgid "Col-1"
+msgstr ""
+
+#: framework/tinymce/shortcodes-generator.php:50
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:50
+msgid "Col-2"
+msgstr ""
+
+#: framework/tinymce/shortcodes-generator.php:51
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:51
+msgid "Col-3"
+msgstr ""
+
+#: framework/tinymce/shortcodes-generator.php:52
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:52
+msgid "Col-4"
+msgstr ""
+
+#: framework/tinymce/shortcodes-generator.php:53
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:53
+msgid "Col-5"
+msgstr ""
+
+#: framework/tinymce/shortcodes-generator.php:54
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:54
+msgid "Col-6"
+msgstr ""
+
+#: framework/tinymce/shortcodes-generator.php:55
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:55
+msgid "Col-7"
+msgstr ""
+
+#: framework/tinymce/shortcodes-generator.php:56
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:56
+msgid "Col-8"
+msgstr ""
+
+#: framework/tinymce/shortcodes-generator.php:57
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:57
+msgid "Col-9"
+msgstr ""
+
+#: framework/tinymce/shortcodes-generator.php:58
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:58
+msgid "Col-10"
+msgstr ""
+
+#: framework/tinymce/shortcodes-generator.php:59
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:59
+msgid "Col-11"
+msgstr ""
+
+#: framework/tinymce/shortcodes-generator.php:60
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:60
+msgid "Col-12"
+msgstr ""
+
+#: framework/tinymce/shortcodes-generator.php:62
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:62
+msgid "Accordion"
+msgstr ""
+
+#: framework/tinymce/shortcodes-generator.php:63
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:63
+msgid "Notification"
+msgstr ""
+
+#: framework/tinymce/shortcodes-generator.php:64
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:64
+msgid "Button"
+msgstr ""
+
+#: framework/tinymce/shortcodes-generator.php:65
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:65
+msgid "Toggle"
+msgstr ""
+
+#: framework/tinymce/shortcodes-generator.php:66
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:66
+msgid "Skill"
+msgstr ""
+
+#: framework/tinymce/shortcodes-generator.php:67
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:67
+msgid "Progress"
+msgstr ""
+
+#: framework/tinymce/shortcodes-generator.php:68
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:68
+msgid "Service"
+msgstr ""
+
+#: framework/tinymce/shortcodes-generator.php:69
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:69
+msgid "Team"
+msgstr ""
+
+#: framework/tinymce/shortcodes-generator.php:70
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:70
+msgid "InfoBox"
+msgstr ""
+
+#: framework/tinymce/shortcodes-generator.php:71
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:71
+msgid "Callout"
+msgstr ""
+
+#: framework/tinymce/shortcodes-generator.php:72
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:72
+msgid "Map Box"
+msgstr ""
+
+#: framework/tinymce/shortcodes-generator.php:73
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:73
+msgid "Vertical Menu"
+msgstr ""
+
+#: framework/tinymce/shortcodes-generator.php:74
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:74
+msgid "Google Font"
+msgstr ""
+
+#: framework/tinymce/shortcodes-generator.php:75
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:75
+msgid "Video"
+msgstr ""
+
+#: framework/tinymce/shortcodes-generator.php:76
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:76
+msgid "Map"
+msgstr ""
+
+#: framework/tinymce/shortcodes-generator.php:78
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:78
+msgid "List"
+msgstr ""
+
+#: framework/tinymce/shortcodes-generator.php:79
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:79
+msgid "Block"
+msgstr ""
+
+#: framework/tinymce/shortcodes-generator.php:80
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:80
+msgid "Blockquote"
+msgstr ""
+
+#: framework/tinymce/shortcodes-generator.php:81
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:81
+msgid "High Light"
+msgstr ""
+
+#: framework/tinymce/shortcodes-generator.php:82
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:82
+msgid "Pricing"
+msgstr ""
+
+#: framework/tinymce/shortcodes-generator.php:83
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:83
+msgid "Tab"
+msgstr ""
+
+#: framework/tinymce/shortcodes-generator.php:84
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:84
+msgid "Posts"
+msgstr ""
+
+#: framework/tinymce/shortcodes-generator.php:85
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:85
+msgid "Posts List"
+msgstr ""
+
+#: framework/tinymce/shortcodes-generator.php:88
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:88
+msgid "Images Slider"
+msgstr ""
+
+#: framework/tinymce/shortcodes-generator.php:89
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:89
+msgid "Dropcap"
+msgstr ""
+
+#: framework/tinymce/shortcodes-generator.php:90
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:90
+msgid "Highlight"
+msgstr ""
+
+#: framework/tinymce/shortcodes-generator.php:93
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:93
+msgid "Section"
+msgstr ""
+
+#: framework/tinymce/shortcodes-generator.php:94
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:94
+msgid "Clear"
+msgstr ""
+
+#: framework/tinymce/shortcodes-generator.php:95
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:95
+msgid "Divider"
+msgstr ""
+
+#: framework/tinymce/shortcodes-generator.php:96
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:96
+msgid "Raw"
+msgstr ""
+
+#: framework/tinymce/shortcodes-generator.php:97
+#: ../er-leaf/framework/tinymce/shortcodes-generator.php:97
+msgid "Break"
+msgstr ""
+
+#: ../inovado/404.php:5
+msgid "Error 404"
+msgstr ""
+
+#: ../inovado/404.php:20
+msgid "File not Found"
+msgstr ""
+
+#: ../inovado/404.php:21
+msgid ""
+"Error 404! Sorry, but we couldn't find the content you were looking for."
+msgstr ""
+
+#: ../inovado/404.php:24
+msgid "Back to Home"
+msgstr ""
+
+#: ../inovado/archive.php:8
+msgid "Category Archive for"
+msgstr ""
+
+#: ../inovado/archive.php:11
+msgid "Posts Tagged"
+msgstr ""
+
+#: ../inovado/archive.php:14 ../inovado/archive.php:17
+#: ../inovado/archive.php:20
+msgid "Archive for"
+msgstr ""
+
+#: ../inovado/archive.php:23
+msgid "Author Archive"
+msgstr ""
+
+#: ../inovado/archive.php:26
+msgid "Blog Archives"
+msgstr ""
+
+#: ../inovado/archive.php:65 ../inovado/index.php:102 ../inovado/search.php:53
+msgid "Not Found"
+msgstr ""
+
+#: ../inovado/comments.php:8
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+
+#: ../inovado/comments.php:17
+msgid "Responses"
+msgstr ""
+
+#: ../inovado/comments.php:17
+msgid "Response <span>(1)</span>"
+msgstr ""
+
+#: ../inovado/comments.php:17
+msgid "Responses <span>(%)</span>"
+msgstr ""
+
+#: ../inovado/comments.php:65 ../twentytwelve/content-aside.php:23
+#: ../twentytwelve/content-image.php:23 ../twentytwelve/content-link.php:21
+#: ../twentytwelve/content-quote.php:20 ../twentytwelve/content-status.php:27
+#: ../twentytwelve/content.php:28
+msgid "Leave a reply"
+msgstr ""
+
+#: ../inovado/footer.php:11
+msgid "loading..."
+msgstr ""
+
+#: ../inovado/footer.php:54 ../inovado/header.php:66
+#: ../inovado/framework/inc/sharebox.php:13
+msgid "Twitter"
+msgstr ""
+
+#: ../inovado/footer.php:57 ../inovado/header.php:69
+msgid "Forrst"
+msgstr ""
+
+#: ../inovado/footer.php:60 ../inovado/header.php:72
+msgid "Dribbble"
+msgstr ""
+
+#: ../inovado/footer.php:63 ../inovado/header.php:75
+msgid "Flickr"
+msgstr ""
+
+#: ../inovado/footer.php:66 ../inovado/header.php:78
+#: ../inovado/framework/inc/sharebox.php:8
+msgid "Facebook"
+msgstr ""
+
+#: ../inovado/footer.php:69 ../inovado/header.php:81
+msgid "Skype"
+msgstr ""
+
+#: ../inovado/footer.php:72 ../inovado/header.php:84
+#: ../inovado/framework/inc/sharebox.php:28
+msgid "Digg"
+msgstr ""
+
+#: ../inovado/footer.php:75 ../inovado/header.php:87
+msgid "Google"
+msgstr ""
+
+#: ../inovado/footer.php:75 ../inovado/header.php:87
+#: ../inovado/framework/inc/sharebox.php:38
+msgid "Google+"
+msgstr ""
+
+#: ../inovado/footer.php:78 ../inovado/header.php:90
+msgid "Instagram"
+msgstr ""
+
+#: ../inovado/footer.php:81 ../inovado/header.php:93
+#: ../inovado/framework/inc/sharebox.php:18
+msgid "LinkedIn"
+msgstr ""
+
+#: ../inovado/footer.php:84 ../inovado/header.php:96
+msgid "Vimeo"
+msgstr ""
+
+#: ../inovado/footer.php:87 ../inovado/header.php:99
+msgid "Yahoo"
+msgstr ""
+
+#: ../inovado/footer.php:90 ../inovado/header.php:102
+msgid "Tumblr"
+msgstr ""
+
+#: ../inovado/footer.php:93 ../inovado/header.php:105
+msgid "YouTube"
+msgstr ""
+
+#: ../inovado/footer.php:96 ../inovado/header.php:108
+msgid "Picasa"
+msgstr ""
+
+#: ../inovado/footer.php:99 ../inovado/header.php:111
+msgid "DeviantArt"
+msgstr ""
+
+#: ../inovado/footer.php:102 ../inovado/header.php:114
+msgid "Behance"
+msgstr ""
+
+#: ../inovado/footer.php:105 ../inovado/header.php:117
+msgid "Pinterest"
+msgstr ""
+
+#: ../inovado/footer.php:108 ../inovado/header.php:120
+msgid "PayPal"
+msgstr ""
+
+#: ../inovado/footer.php:111 ../inovado/header.php:123
+#: ../inovado/framework/inc/sharebox.php:33
+msgid "Delicious"
+msgstr ""
+
+#: ../inovado/footer.php:114 ../inovado/header.php:126
+msgid "XING"
+msgstr ""
+
+#: ../inovado/footer.php:117 ../inovado/header.php:129
+msgid "RSS"
+msgstr ""
+
+#: ../inovado/footer.php:133
+msgid "Back to Top"
+msgstr ""
+
+#: ../inovado/functions.php:141
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: ../inovado/functions.php:154
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: ../inovado/functions.php:216 ../inovado/framework/inc/breadcrumbs.php:109
+msgid "Page"
+msgstr ""
+
+#: ../inovado/functions.php:216
+msgid "of"
+msgstr ""
+
+#: ../inovado/functions.php:217
+msgid "First"
+msgstr ""
+
+#: ../inovado/functions.php:218 ../inovado/framework/inc/titlebar.php:130
+msgid "Previous"
+msgstr ""
+
+#: ../inovado/functions.php:226 ../inovado/framework/inc/titlebar.php:129
+msgid "Next"
+msgstr ""
+
+#: ../inovado/functions.php:227
+msgid "Last"
+msgstr ""
+
+#: ../inovado/functions.php:244
+msgid "read more"
+msgstr ""
+
+#: ../inovado/functions.php:327
+msgid "Blog Widgets"
+msgstr ""
+
+#: ../inovado/functions.php:329
+msgid "These are widgets for the Blog sidebar."
+msgstr ""
+
+#: ../inovado/functions.php:340
+msgid "Footer Widgets"
+msgstr ""
+
+#: ../inovado/functions.php:342
+msgid "These are widgets for the Footer."
+msgstr ""
+
+#: ../inovado/functions.php:353
+msgid "Infobar Widgets"
+msgstr ""
+
+#: ../inovado/functions.php:355
+msgid "These are widgets for the Infobar."
+msgstr ""
+
+#: ../inovado/page-portfolio-col1.php:125
+msgid "View Details"
+msgstr ""
+
+#: ../inovado/page-portfolio-col1.php:127
+#: ../inovado/framework/inc/portfolio/sidebyside.php:70
+#: ../inovado/framework/inc/portfolio/wide.php:63
+msgid "Launch Project"
+msgstr ""
+
+#: ../inovado/page-sitemap.php:26
+msgid "Feeds"
+msgstr ""
+
+#: ../inovado/page-sitemap.php:32
+msgid "Blog Categories"
+msgstr ""
+
+#: ../inovado/page-sitemap.php:63
+msgid "Archives by Month"
+msgstr ""
+
+#: ../inovado/page-sitemap.php:72
+msgid "Pages"
+msgstr ""
+
+#: ../inovado/search.php:6
+msgid "Search Results for"
+msgstr ""
+
+#: ../inovado/searchform.php:2
+msgid "To search type and hit enter"
+msgstr ""
+
+#: ../inovado/single-portfolio.php:24
+msgid "Related Projects"
+msgstr ""
+
+#: ../inovado/single.php:79
+msgid "About the Author"
+msgstr ""
+
+#: ../inovado/single.php:94
+msgid "Related Posts"
+msgstr ""
+
+#: ../inovado/framework/inc/cpt-portfolio.php:25
+msgid "Portfolio Item"
+msgstr ""
+
+#: ../inovado/framework/inc/cpt-portfolio.php:26
+msgid "Add New Item"
+msgstr "Yeni Ekle"
+
+#: ../inovado/framework/inc/cpt-portfolio.php:27
+#: ../inovado/framework/inc/cpt-portfolio.php:29
+msgid "Add New Portfolio Item"
+msgstr ""
+
+#: ../inovado/framework/inc/cpt-portfolio.php:28
+msgid "Edit Portfolio Item"
+msgstr ""
+
+#: ../inovado/framework/inc/cpt-portfolio.php:30
+msgid "View Item"
+msgstr ""
+
+#: ../inovado/framework/inc/cpt-portfolio.php:31
+msgid "Search Portfolio"
+msgstr ""
+
+#: ../inovado/framework/inc/cpt-portfolio.php:32
+msgid "No portfolio items found"
+msgstr ""
+
+#: ../inovado/framework/inc/cpt-portfolio.php:33
+msgid "No portfolio items found in trash"
+msgstr ""
+
+#: ../inovado/framework/inc/cpt-portfolio.php:61
+msgid "Thumbnail"
+msgstr ""
+
+#: ../inovado/framework/inc/cpt-portfolio.php:62
+msgid "Filter"
+msgstr ""
+
+#: ../inovado/framework/inc/cpt-portfolio.php:90
+#: ../inovado/framework/inc/cpt-portfolio.php:100
+msgid "None"
+msgstr ""
+
+#: ../inovado/framework/inc/meta.php:1
+msgid "View all posts by"
+msgstr ""
+
+#: ../inovado/framework/inc/meta.php:1
+msgid "No Comments"
+msgstr ""
+
+#: ../inovado/framework/inc/meta.php:1
+msgid "1 Comment"
+msgstr ""
+
+#: ../inovado/framework/inc/meta.php:1
+msgid "% Comments"
+msgstr ""
+
+#: ../inovado/framework/inc/sharebox.php:3
+msgid "Share this Story"
+msgstr ""
+
+#: ../inovado/framework/inc/sharebox.php:23
+msgid "Reddit"
+msgstr ""
+
+#: ../inovado/framework/inc/sharebox.php:43
+#: ../inovado/framework/inc/widgets/contact.php:44
+msgid "E-Mail"
+msgstr ""
+
+#: ../inovado/framework/inc/shortcodes.php:1277
+msgid "Read More &rarr;"
+msgstr ""
+
+#: ../inovado/framework/inc/meta-box/inc/fields/select-advanced.php:82
+msgid "Select a value"
+msgstr ""
+
+#: ../inovado/framework/inc/portfolio/sidebyside.php:55
+#: ../inovado/framework/inc/portfolio/wide.php:48
+msgid "Project Description"
+msgstr ""
+
+#: ../inovado/framework/inc/portfolio/sidebyside.php:61
+#: ../inovado/framework/inc/portfolio/wide.php:54
+msgid "Project Details"
+msgstr ""
+
+#: ../inovado/framework/inc/portfolio/sidebyside.php:64
+#: ../inovado/framework/inc/portfolio/wide.php:57
+msgid "Client"
+msgstr ""
+
+#: ../inovado/framework/inc/widgets/contact.php:16
+msgid "Display your Contact Informations"
+msgstr ""
+
+#: ../inovado/framework/inc/widgets/contact.php:18
+msgid "minti.Contact"
+msgstr ""
+
+#: ../inovado/framework/inc/widgets/contact.php:36
+msgid "Phone"
+msgstr ""
+
+#: ../inovado/framework/inc/widgets/contact.php:40
+msgid "Fax"
+msgstr ""
+
+#: ../inovado/framework/inc/widgets/contact.php:48
+msgid "Web"
+msgstr ""
+
+#: ../inovado/framework/inc/widgets/custommenu.php:49
+#, php-format
+msgid "No menus have been created yet. <a href=\"%s\">Create some</a>."
+msgstr ""
+
+#: ../inovado/framework/inc/widgets/custommenu.php:54
+msgid "Select Menu:"
+msgstr ""
+
+#: ../inovado/framework/inc/widgets/embed.php:16
+msgid "Display Embed Video"
+msgstr ""
+
+#: ../inovado/framework/inc/widgets/embed.php:18
+msgid "minti.Embed"
+msgstr ""
+
+#: ../inovado/framework/inc/widgets/facebook.php:16
+msgid "Display Facebook Like Box"
+msgstr ""
+
+#: ../inovado/framework/inc/widgets/facebook.php:18
+msgid "minti.Facebook"
+msgstr ""
+
+#: ../inovado/framework/inc/widgets/flickr.php:16
+msgid "Display your latest Flickr Photos"
+msgstr ""
+
+#: ../inovado/framework/inc/widgets/flickr.php:18
+msgid "minti.Flickr"
+msgstr ""
+
+#: ../inovado/framework/inc/widgets/flickr.php:63
+msgid "Flickr idGettr"
+msgstr ""
+
+#: ../inovado/framework/inc/widgets/portfolio.php:16
+msgid "Display your latest Portfolio"
+msgstr ""
+
+#: ../inovado/framework/inc/widgets/portfolio.php:18
+msgid "minti.Portfolio"
+msgstr ""
+
+#: ../inovado/framework/inc/widgets/sponsor.php:16
+msgid "Display your Sponsor Links"
+msgstr ""
+
+#: ../inovado/framework/inc/widgets/sponsor.php:18
+msgid "minti.Sponsor"
+msgstr ""
+
+#: ../inovado/framework/inc/widgets/twitter.php:16
+msgid "Display your latest Tweets"
+msgstr ""
+
+#: ../inovado/framework/inc/widgets/twitter.php:18
+msgid "minti.Twitter"
+msgstr ""
+
+#: ../twentythirteen/404.php:16
+msgid "Not found"
+msgstr "Bulunamadı"
+
+#: ../twentythirteen/404.php:21 ../twentytwelve/404.php:17
+msgid "This is somewhat embarrassing, isn&rsquo;t it?"
+msgstr ""
+
+#: ../twentythirteen/404.php:22
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+
+#: ../twentythirteen/author-bio.php:16 ../twentytwelve/author.php:53
+#: ../twentytwelve/content.php:53
+#, php-format
+msgid "About %s"
+msgstr ""
+
+#: ../twentythirteen/author-bio.php:20 ../twentytwelve/content.php:57
+#, php-format
+msgid "View all posts by %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: ../twentythirteen/author.php:30
+#, php-format
+msgid "All posts by %s"
+msgstr ""
+
+#: ../twentythirteen/comments.php:45 ../twentytwelve/comments.php:42
+msgid "Comment navigation"
+msgstr ""
+
+#: ../twentythirteen/content-aside.php:13
+#: ../twentythirteen/content-audio.php:24
+#: ../twentythirteen/content-gallery.php:24
+#: ../twentythirteen/content-image.php:23
+#: ../twentythirteen/content-link.php:24
+#: ../twentythirteen/content-quote.php:13
+#: ../twentythirteen/content-status.php:13
+#: ../twentythirteen/content-video.php:23 ../twentythirteen/content.php:39
+#: ../twentytwelve/content-aside.php:15 ../twentytwelve/content-image.php:13
+#: ../twentytwelve/content-link.php:14 ../twentytwelve/content-quote.php:13
+#: ../twentytwelve/content-status.php:21 ../twentytwelve/content.php:39
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: ../twentythirteen/content-gallery.php:36
+#: ../twentythirteen/content-image.php:32
+#: ../twentythirteen/content-quote.php:22
+#: ../twentythirteen/content-video.php:32 ../twentythirteen/content.php:47
+msgid "Leave a comment"
+msgstr "Yorum Yap"
+
+#: ../twentythirteen/content-gallery.php:36
+#: ../twentythirteen/content-image.php:32
+#: ../twentythirteen/content-quote.php:22
+#: ../twentythirteen/content-video.php:32 ../twentythirteen/content.php:47
+msgid "One comment so far"
+msgstr ""
+
+#: ../twentythirteen/content-gallery.php:36
+#: ../twentythirteen/content-image.php:32
+#: ../twentythirteen/content-quote.php:22
+#: ../twentythirteen/content-video.php:32 ../twentythirteen/content.php:47
+#, php-format
+msgid "View all % comments"
+msgstr ""
+
+#: ../twentythirteen/content-none.php:12 ../twentytwelve/content-none.php:13
+#: ../twentytwelve/index.php:49 ../twentytwelve/search.php:34
+msgid "Nothing Found"
+msgstr ""
+
+#: ../twentythirteen/content-none.php:18
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: ../twentythirteen/content-none.php:22
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with "
+"different keywords."
+msgstr ""
+
+#: ../twentythirteen/content-none.php:27 ../twentytwelve/404.php:21
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: ../twentythirteen/footer.php:20 ../twentytwelve/footer.php:17
+msgid "http://wordpress.org/"
+msgstr ""
+
+#: ../twentythirteen/footer.php:20 ../twentytwelve/footer.php:17
+#, php-format
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: ../twentythirteen/functions.php:227
+msgid "Main Widget Area"
+msgstr ""
+
+#: ../twentythirteen/functions.php:229
+msgid "Appears in the footer section of the site."
+msgstr ""
+
+#: ../twentythirteen/functions.php:237
+msgid "Secondary Widget Area"
+msgstr ""
+
+#: ../twentythirteen/functions.php:239
+msgid "Appears on posts and pages in the sidebar."
+msgstr ""
+
+#: ../twentythirteen/functions.php:264
+msgid "Posts navigation"
+msgstr ""
+
+#: ../twentythirteen/functions.php:268 ../twentytwelve/functions.php:283
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr ""
+
+#: ../twentythirteen/functions.php:272 ../twentytwelve/functions.php:284
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: ../twentythirteen/functions.php:300 ../twentytwelve/functions.php:282
+#: ../twentytwelve/single.php:20
+msgid "Post navigation"
+msgstr ""
+
+#: ../twentythirteen/functions.php:324
+msgid "Sticky"
+msgstr ""
+
+#: ../twentythirteen/functions.php:330 ../twentythirteen/functions.php:336
+#: ../twentytwelve/functions.php:364 ../twentytwelve/functions.php:367
+msgid ", "
+msgstr ""
+
+#: ../twentythirteen/functions.php:371 ../twentytwelve/content-aside.php:20
+#: ../twentytwelve/content-link.php:18 ../twentytwelve/content-quote.php:17
+#: ../twentytwelve/content-status.php:15
+#, php-format
+msgid "Permalink to %s"
+msgstr ""
+
+#: ../twentythirteen/header.php:43 ../twentytwelve/header.php:43
+msgid "Menu"
+msgstr ""
+
+#: ../twentythirteen/header.php:44 ../twentytwelve/header.php:44
+msgid "Skip to content"
+msgstr ""
+
+#: ../twentythirteen/image.php:22
+#, php-format
+msgid ""
+"<span class=\"attachment-meta\">Published on <time class=\"entry-date\" "
+"datetime=\"%1$s\">%2$s</time> in <a href=\"%3$s\" title=\"Return to %4$s\" "
+"rel=\"gallery\">%5$s</a></span>"
+msgstr ""
+
+#: ../twentythirteen/image.php:39
+msgid "Full resolution"
+msgstr ""
+
+#: ../twentythirteen/image.php:51
+msgid "<span class=\"meta-nav\">&larr;</span> Previous"
+msgstr ""
+
+#: ../twentythirteen/image.php:52
+msgid "Next <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: ../twentythirteen/taxonomy-post_format.php:23
+#, php-format
+msgid "%s Archives"
+msgstr ""
+
+#: ../twentythirteen/inc/back-compat.php:38
+#: ../twentythirteen/inc/back-compat.php:50
+#: ../twentythirteen/inc/back-compat.php:65
+#, php-format
+msgid ""
+"Twenty Thirteen requires at least WordPress version 3.6. You are running "
+"version %s. Please upgrade and try again."
+msgstr ""
+
+#: ../twentytwelve/author.php:32
+#, php-format
+msgid "Author Archives: %s"
+msgstr ""
+
+#: ../twentytwelve/content-aside.php:23 ../twentytwelve/content-image.php:23
+#: ../twentytwelve/content-link.php:21 ../twentytwelve/content-quote.php:20
+#: ../twentytwelve/content-status.php:27 ../twentytwelve/content.php:28
+msgid "1 Reply"
+msgstr "1 Cevap"
+
+#: ../twentytwelve/content-aside.php:23 ../twentytwelve/content-image.php:23
+#: ../twentytwelve/content-link.php:21 ../twentytwelve/content-quote.php:20
+#: ../twentytwelve/content-status.php:27 ../twentytwelve/content.php:28
+msgid "% Replies"
+msgstr "% Cevap"
+
+#: ../twentytwelve/content-link.php:12
+msgid "Link"
+msgstr ""
+
+#: ../twentytwelve/content-none.php:17 ../twentytwelve/index.php:53
+msgid ""
+"Apologies, but no results were found. Perhaps searching will help find a "
+"related post."
+msgstr ""
+
+#: ../twentytwelve/content.php:14
+msgid "Featured post"
+msgstr ""
+
+#: ../twentytwelve/functions.php:64
+msgid "Primary Menu"
+msgstr ""
+
+#: ../twentytwelve/functions.php:238
+msgid "Main Sidebar"
+msgstr ""
+
+#: ../twentytwelve/functions.php:240
+msgid ""
+"Appears on posts and pages except the optional Front Page template, which "
+"has its own widgets"
+msgstr ""
+
+#: ../twentytwelve/functions.php:248
+msgid "First Front Page Widget Area"
+msgstr ""
+
+#: ../twentytwelve/functions.php:250 ../twentytwelve/functions.php:260
+msgid ""
+"Appears when using the optional Front Page template with a page set as "
+"Static Front Page"
+msgstr ""
+
+#: ../twentytwelve/functions.php:258
+msgid "Second Front Page Widget Area"
+msgstr ""
+
+#: ../twentytwelve/functions.php:309
+msgid "Pingback:"
+msgstr ""
+
+#: ../twentytwelve/functions.php:324
+msgid "Post author"
+msgstr ""
+
+#: ../twentytwelve/functions.php:345
+msgid "Reply"
+msgstr "Cevapla"
+
+#: ../twentytwelve/functions.php:384
+#, php-format
+msgid ""
+"This entry was posted in %1$s and tagged %2$s on %3$s<span class=\"by-author"
+"\"> by %4$s</span>."
+msgstr ""
+
+#: ../twentytwelve/functions.php:386
+#, php-format
+msgid ""
+"This entry was posted in %1$s on %3$s<span class=\"by-author\"> by %4$s</"
+"span>."
+msgstr ""
+
+#: ../twentytwelve/functions.php:388
+#, php-format
+msgid "This entry was posted on %3$s<span class=\"by-author\"> by %4$s</span>."
+msgstr ""
+
+#: ../twentytwelve/image.php:26
+#, php-format
+msgid ""
+"<span class=\"meta-prep meta-prep-entry-date\">Published </span> <span class="
+"\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></"
+"span> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; "
+"%5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" rel=\"gallery\">%8$s</"
+"a>."
+msgstr ""
+
+#: ../twentytwelve/image.php:41
+msgid "&larr; Previous"
+msgstr ""
+
+#: ../twentytwelve/image.php:42
+msgid "Next &rarr;"
+msgstr ""
+
+#: ../twentytwelve/index.php:38
+msgid "No posts to display"
+msgstr ""
+
+#: ../twentytwelve/index.php:42
+#, php-format
+msgid "Ready to publish your first post? <a href=\"%s\">Get started here</a>."
+msgstr ""
+
+#: ../twentytwelve/search.php:38
+msgid ""
+"Sorry, but nothing matched your search criteria. Please try again with some "
+"different keywords."
+msgstr ""
