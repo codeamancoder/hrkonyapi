@@ -1,4 +1,4 @@
- <?php
+<?php
 /**
  * Class used internally by Diff to actually compute the diffs.
  *

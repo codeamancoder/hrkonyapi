@@ -1,39 +1,15 @@
 <?php
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /**
- * The base configurations of the WordPress.
+ * WordPress için taban ayar dosyası.
  *
- * This file has the following configurations: MySQL settings, Table Prefix,
- * Secret Keys, WordPress Language, and ABSPATH. You can find more information
- * by visiting {@link http://codex.wordpress.org/Editing_wp-config.php Editing
- * wp-config.php} Codex page. You can get the MySQL settings from your web host.
+ * Bu dosya şu ayarları içerir: MySQL ayarları, tablo öneki,
+ * gizli anahtaralr ve ABSPATH. Daha fazla bilgi için 
+ * {@link http://codex.wordpress.org/Editing_wp-config.php wp-config.php düzenleme}
+ * yardım sayfasına göz atabilirsiniz. MySQL ayarlarınızı servis sağlayıcınızdan edinebilirsiniz.
  *
- * This file is used by the wp-config.php creation script during the
- * installation. You don't have to use the web site, you can just copy this file
- * to "wp-config.php" and fill in the values.
+ * Bu dosya kurulum sırasında wp-config.php dosyasının oluşturulabilmesi için
+ * kullanılır. İsterseniz bu dosyayı kopyalayıp, ismini "wp-config.php" olarak değiştirip,
+ * değerleri girerek de kullanabilirsiniz.
  *
  * @package WordPress
  */
@@ -85,29 +61,19 @@ define('NONCE_SALT',       'eşsiz karakter kümenizi buraya yerleştirin');
 $table_prefix  = 'wp_';
 
 /**
- * WordPress yerel dil dosyası, varsayılan ingilizce.
+ * Geliştiriciler için: WordPress hata ayıklama modu.
  *
- * Bu değeri değiştirmenize gerek yok! Zaten Türkçe'ye ayarlı.
- * tr_TR.mo Türkçe dil dosyasının wp-content/languages dizini altında olduğundan emin olun.
- * Türkçe çeviri hakkında öneri ve eleştirilerinizi iletisim@wordpress-tr.com adresine iletebilirsiniz.
- *
- */
-define('WPLANG', 'tr_TR');
-
-/**
- * For developers: WordPress debugging mode.
- *
- * Change this to true to enable the display of notices during development.
- * It is strongly recommended that plugin and theme developers use WP_DEBUG
- * in their development environments.
+ * Bu değeri "true" yaparak geliştirme sırasında hataların ekrana basılmasını sağlayabilirsiniz.
+ * Tema ve eklenti geliştiricilerinin geliştirme aşamasında WP_DEBUG
+ * kullanmalarını önemle tavsiye ederiz.
  */
 define('WP_DEBUG', false);
 
 /* Hepsi bu kadar. Mutlu bloglamalar! */
 
-/** Absolute path to the WordPress directory. */
+/** WordPress dizini için mutlak yol. */
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
 
-/** Sets up WordPress vars and included files. */
+/** WordPress değişkenlerini ve yollarını kurar. */
 require_once(ABSPATH . 'wp-settings.php');

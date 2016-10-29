@@ -1,28 +1,4 @@
 <?php
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /**
  * Handle Trackbacks and Pingbacks Sent to WordPress
  *
@@ -44,21 +20,21 @@ if (empty($wp)) {
  *
  * @since 0.71
  *
- * @param int|bool $error         Whether there was an error.
- *                                Default '0'. Accepts '0' or '1'.
- * @param string   $error_message Error message if an error occurred.
+ * @param mixed  $error         Whether there was an error.
+ *                              Default '0'. Accepts '0' or '1', true or false.
+ * @param string $error_message Error message if an error occurred.
  */
 function trackback_response($error = 0, $error_message = '') {
 	header('Content-Type: text/xml; charset=' . get_option('blog_charset') );
 	if ($error) {
-		echo '<?phpxml version="1.0" encoding="utf-8"?'.">\n";
+		echo '<?xml version="1.0" encoding="utf-8"?'.">\n";
 		echo "<response>\n";
 		echo "<error>1</error>\n";
 		echo "<message>$error_message</message>\n";
 		echo "</response>";
 		die();
 	} else {
-		echo '<?phpxml version="1.0" encoding="utf-8"?'.">\n";
+		echo '<?xml version="1.0" encoding="utf-8"?'.">\n";
 		echo "<response>\n";
 		echo "<error>0</error>\n";
 		echo "</response>";
