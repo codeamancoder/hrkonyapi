@@ -17,8 +17,8 @@
 // ** MySQL ayarları - Bu bilgileri sunucunuzdan alabilirsiniz ** //
 /** WordPress için kullanılacak veritabanının adı */
 
-define('WP_CACHE', false); //Added by WP-Cache Manager
-define( 'WPCACHEHOME', '/home/admin/web/herkonyapi.com/public_html/wp-content/plugins/wp-super-cache/' ); //Added by WP-Cache Manager
+//define('WP_CACHE', false); //Added by WP-Cache Manager
+//define( 'WPCACHEHOME', '/home/admin/web/herkonyapi.com/public_html/wp-content/plugins/wp-super-cache/' ); //Added by WP-Cache Manager
 define('DB_NAME', 'srkn_hrknyap');
 
 /** MySQL veritabanı kullanıcısı */
