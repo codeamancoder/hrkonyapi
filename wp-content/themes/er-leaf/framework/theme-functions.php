@@ -291,7 +291,7 @@ function er_leaf_google_font(){
     }
     
     if($custom_font != ''){
-        $out = "@import url('http://fonts.googleapis.com/css?family=" . substr_replace($custom_font ,"",-1) . "&amp;subset=latin,latin-ext,cyrillic,cyrillic-ext,greek-ext,greek,vietnamese');";
+        $out = "@import url('https://fonts.googleapis.com/css?family=" . substr_replace($custom_font ,"",-1) . "&amp;subset=latin,latin-ext,cyrillic,cyrillic-ext,greek-ext,greek,vietnamese');";
     }
 
     return $out;
