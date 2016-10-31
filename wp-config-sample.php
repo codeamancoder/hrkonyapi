@@ -4,7 +4,7 @@
  *
  * Bu dosya şu ayarları içerir: MySQL ayarları, tablo öneki,
  * gizli anahtaralr ve ABSPATH. Daha fazla bilgi için 
- * {@link http://codex.wordpress.org/Editing_wp-config.php wp-config.php düzenleme}
+ * {@link https://codex.wordpress.org/Editing_wp-config.php wp-config.php düzenleme}
  * yardım sayfasına göz atabilirsiniz. MySQL ayarlarınızı servis sağlayıcınızdan edinebilirsiniz.
  *
  * Bu dosya kurulum sırasında wp-config.php dosyasının oluşturulabilmesi için

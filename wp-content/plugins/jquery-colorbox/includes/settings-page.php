@@ -14,7 +14,6 @@
 ?>
 <div class="wrap">
   <div>
-    <?php screen_icon(); ?>
     <h2><?php printf(__('%1$s Settings', JQUERYCOLORBOX_TEXTDOMAIN), JQUERYCOLORBOX_NAME); ?></h2>
     <br class="clear"/>
 
