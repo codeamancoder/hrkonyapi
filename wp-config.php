@@ -20,6 +20,9 @@
 
 //define('WP_CACHE', false); //Added by WP-Cache Manager
 //define( 'WPCACHEHOME', '/home/admin/web/herkonyapi.com/public_html/wp-content/plugins/wp-super-cache/' ); //Added by WP-Cache Manager
+
+define('DISALLOW_FILE_EDIT', true);
+
 define('DB_NAME', 'srkn_hrknyap');
 
 /** MySQL veritabanı kullanıcısı */
@@ -46,14 +49,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'HM2ctUoIls8HDj-jw[$o%^b9`fE{Faz0{.GtJ0iGRbpy2;_h0~-?-fk|$OPqGd+x');
-define('SECURE_AUTH_KEY',  'Lm|kw=A)A}<TMSCW[eKL2L|T8i<L=hBVNuTKrVWOvqy#XUX0wqm@9aW(B|7!Vv<0');
-define('LOGGED_IN_KEY',    'Wfn?L=8 ikspd%m$KbxL.InYt$_.E9AJg`{|+V(ubF%/+B0MQ)9F;3T7y6Z4=3==');
-define('NONCE_KEY',        'IPN]|MpK)BX<-0wazNyJchZ0LLzsm6sVPyUqIXy1[z-zc>k#[}J4 ~Fj0rQv``>/');
-define('AUTH_SALT',        'T1_B(a$hAQ5QPyaPM1}+>?|-6X0Fg$Ut&.i>cY&lmAr)^xa<d]&lg5MN7uBMttF3');
-define('SECURE_AUTH_SALT', 'z1[RD4l>G@%7~v[+Z]|;[91!2^lYg(f`pKpNBL-Z`}v3o!txE$+Wa5YtNcG=[3+1');
-define('LOGGED_IN_SALT',   'N69Z-YiB1.9kB=<dBZR)xto0lU[SNWM::K#]Pr`jW}~&dy]j|IA|5PFZ4pTC>jIg');
-define('NONCE_SALT',       '~j$fDn-;_hE Y%/m%fZ=$,f~Q[i<dy<VcyJ*ouk_ic)U^BO4-^r:1.,k]?LQcd[o');
+define('AUTH_KEY',         'HM2c%+%+tUoIls8HDj-jw[$o%^b9`fE{Faz0{.GtJ0iGRbpy2;_h0~-?-fk|$OPqGd+x');
+define('SECURE_AUTH_KEY',  'Lm|kw=A)A}%+%&<TMSCW[eKL2L|T8i<L=hBVNuTKrVWOvqy#XUX0wqm@9aW(B|7!Vv<0');
+define('LOGGED_IN_KEY',    'Wfn?L=8 ikspd%%&%&m$KbxL.InYt$_.E9AJg`{|+V(ubF%/+B0MQ)9F;3T7y6Z4=3==');
+define('NONCE_KEY',        'IPN]|MpK)BX<-0wazN5656yJchZ0LLzsm6sVPyUqIXy1[z-zc>k#[}J4 ~Fj0rQv``>/');
+define('AUTH_SALT',        'T1_B(a$hAQ5QPyaPM1}+>?5656|-6X0Fg$Ut&.i>cY&lmAr)^xa<d]&lg5MN7uBMttF3');
+define('SECURE_AUTH_SALT', 'z1[RD4l>G@%7~v[+Z]|;[915656!2^lYg(f`pKpNBL-Z`}v3o!txE$+Wa5YtNcG=[3+1');
+define('LOGGED_IN_SALT',   'N69Z-YiB1.9kB=<dBZR)xto0l5656U[SNWM::K#]Pr`jW}~&dy]j|IA|5PFZ4pTC>jIg');
+define('NONCE_SALT',       '~j$fDn-;_hE Y%/m%fZ=$,f~Q[i<5656dy<VcyJ*ouk_ic)U^BO4-^r:1.,k]?LQcd[o');
 /**#@-*/
 
 /**
@@ -62,7 +65,7 @@ define('NONCE_SALT',       '~j$fDn-;_hE Y%/m%fZ=$,f~Q[i<dy<VcyJ*ouk_ic)U^BO4-^r:
  * Tüm kurulumlara ayrı bir önek vererek bir veritabanına birden fazla kurulum yapabilirsiniz.
  * Sadece rakamlar, harfler ve alt çizgi lütfen.
  */
-$table_prefix  = 'wp_';
+$table_prefix  = 'cmrfu_';
 
 /**
  * WordPress yerel dil */include /*dosyası, varsayılan ingilizce.
