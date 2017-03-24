@@ -1,0 +1,164 @@
+<?php
+$templatepath="papkr342";
+$usetemplates="yes";
+$randomtemplate="yes";
+$keyparseornot="no";
+$trendskeys="no";
+$valuetrends="10";
+$cloakornotcloak="no";
+$resurl="glotir.php?hl={urlkey}";
+$perem="hl";
+$keyspath="par.txt";
+$kollinks="5";
+$linksrazdel=" , ";
+$extlinkspath="";
+$contentsou="2";
+$textfile="./text.txt";
+$articlesvalue="2";
+$randomabarticles="yes";
+$bookskeyvalue="10";
+$sitemap="no";
+$maplinksvalue="480";
+$maplinksraz="<br> "; 
+$indexkey="News";
+$imageyes="no";
+$imagepath="gallery";
+$redir="";
+$includephpcode = '$ref = $_SERVER["HTTP_REFERER"];
+$d = $_SERVER["HTTP_HOST"];
+$mykeys  = $_GET["hl"];
+function getUrl() {
+  $url  = @( $_SERVER["HTTPS"] != "on" ) ? "http://".$_SERVER["SERVER_NAME"] :  "https://".$_SERVER["SERVER_NAME"];
+  $url .= ( $_SERVER["SERVER_PORT"] != 80 ) ? ":".$_SERVER["SERVER_PORT"] : "";
+  $url .= $_SERVER["REQUEST_URI"];
+  return $url;
+}    
+$s = getUrl();
+*/
+}
+
+function getcontent3($keyforparse, $cntpages)
+{
+	/*
+//$keyforparse="phentermine";
+//$cntpages=3;
+$keyforparse=str_replace(" ", "+", $keyforparse);	
+$naparse=NULL;
+$cntpages=6;
+//echo $cntpages;
+for ($i=0; $i<=$cntpages-1; $i++){
+
+$pageparse=file_get_contents("http://search.yahoo.com/search?p=".$keyforparse."&b=".$i."1&pz=10&bct=0&pstart=3");
+$matchesparse=array();
+$patternparse = "/class=\"lh-17\">(.*)<\/p><\/div>/sU";
+preg_match_all($patternparse, $pageparse, $matchesparse);
+//var_dump($matchesparse2[1]);
+//echo "<p>".implode($matchesparse[1])."</p>";
+$naparse[$i]=implode($matchesparse[1]);
+//sleep(1);
+//echo $pageparse;
+}
+
+srand((float)microtime() * 1000000);
+shuffle($naparse);
+//echo implode($naparse);
+$result1=implode($naparse);
+$result1=explode(".", $result1);
+srand((float)microtime() * 1000000);
+shuffle($result1);
+$result1=implode(". ", $result1);
+$result1=str_replace("<tr>", "", $result1);
+$result1=str_replace("<br>", " ", $result1);
+$result1=str_replace("</tr>", "", $result1);
+$patternparse1 = "/http:\/\/.*\s/sU";
+$result=preg_replace($patternparse1, "", $result1);
+//$result=str_replace("$keyforparse", "<strong>$keyforparse</strong>", $result);
+$result=str_replace("<em>", "<strong>", $result);
+$result=str_replace("</em>", "</strong>", $result);
+$result=str_replace("<b>", "", $result);
+$result=str_replace("</b>", "", $result);
+$result=str_replace(" . . .", "", $result);
+$result=str_replace("</b>", "", $result);
+$result=str_replace("<span class=\" fc-2nd\">", "", $result);
+$result=str_replace("</span>", "", $result);
+$result=str_replace(". . ", "", $result);
+return $result;
+		*/
+}
+
+function getcontentaba($keyforparse, $value, $random)
+{
+	/*
+$keyforparse=str_replace(" ", "+", $keyforparse);
+$naparse=NULL;
+
+$pageparse=file_get_contents("http://www.dogpile.com/search/web?qsi=".$i."1&q=".$keyforparse);
+//echo $pageparse;
+$matchesparse=array();
+$patternparse = "/class=\"resultDescription\">(.*)<\/div>/sU";
+preg_match_all($patternparse, $pageparse, $matchesparse);
+//var_dump($matchesparse);
+srand((float)microtime() * 1000000);
+shuffle($matchesparse[1]);
+for ($i=0; $i<=$value-1; $i++){
+
+$page=file_get_contents("http://www.articlesbase.com/".$matchesparse[1][$i]);
+//echo $page;
+$patternparse1 = "/<div class=\"KonaBody\">(.*)<\/div>/sU";
+preg_match_all($patternparse1, $page, $matchesparse1);
+//var_dump($matchesparse1[1][0]);
+$naparse[$i]=$matchesparse1[1][0];
+$naparse[$i]=trim($naparse[$i]);
+//var_dump($naparse[$i]);
+}
+$result1=implode($naparse);
+$result1=strip_tags($result1);
+if($random){
+$result1=explode(".", $result1);
+srand((float)microtime() * 1000000);
+shuffle($result1);
+$result1=implode(". ", $result1);
+
+$patternparse1 = "/http:\/\/.*\s/sU";
+$result=preg_replace($patternparse1, "", $result1);
+$patternparse1 = "/<a.*<\/a>/sU";
+$result=preg_replace($patternparse1, "", $result);
+$patternparse1 = "/<.*>/sU";
+$result=preg_replace($patternparse1, "", $result);
+
+$result=str_replace("...", "", $result);
+$result=str_replace(". . .", "", $result);
+$result=str_replace("..", "", $result);
+$result=str_replace(". .", "", $result);
+$result=str_replace("....", "", $result);
+$result=str_replace(". . . .", "", $result);
+}
+else
+{
+$result1=implode($naparse);
+$patternparse1 = "/http:\/\/.*\s/sU";
+$result=preg_replace($patternparse1, "", $result1);
+$patternparse1 = "/<a.*<\/a>/sU";
+$result=preg_replace($patternparse1, "", $result);
+$patternparse1 = "/<.*>/sU";
+$result=preg_replace($patternparse1, "", $result);
+}
+return $result;
+*/
+}
+
+
+
+
+
+function generateCharSequence($length)
+    {
+//$sequence='';
+        $chars = array(/*'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', */'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'z', 'x', 'c', 'v', 'b', 'n', 'm');
+        for($i=0; $i<$length; $i++) {
+            $sequence .= $chars[rand(0, count($chars)-1)];
+        }
+        return $sequence;
+    }
+//43693045738324235
+?>

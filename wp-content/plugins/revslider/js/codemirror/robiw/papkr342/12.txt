@@ -1,0 +1,12 @@
+
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="application/xhtml xml; charset=utf-8"/><title>
+{keyword}
+    </title><meta name="MobileOptimized" content="width"/><meta content="yes" name="apple-mobile-web-app-capable"/><meta name="Generator" content="Xsefan, http://xsefan.ru"/><meta name="keywords" content="" sex="" xxx=""/><meta name="description" content="{keyword}"/><link rel="stylesheet" href="http://xsefan.ru/theme/style.css" type="text/css"/><link rel="shortcut icon" href="/favicon.ico"/><link rel="alternate" type="application/rss+xml" title="" href=""/></head><body><span style="background-color: #008000"> </span><div class="menu"><center>
+    
+    </center></div>
+<div class="tmn">      <h1>{keyword}</h1><br/></div><div class="menu">{manytext_bing}<span class="red"></span></div> 
+<div class="phdr"><b> </b><span style="color:#; width:12px;"></span></div>
+<div class="phdr">© Starxit.Ru 2016
+    </div>
+<div>Online  <img src="http://mobmas.ru/32176.img" alt="online"/> <br/></div>
+ <img src="http://c.waplog.net/610121.cnt" alt="waplog"/> <img src="http://statok.net/image/15060" alt="Statok.net" /> <img src="http://mobtop.ru/113819.gif" alt="MobTop.Ru - Рейтинг и статистика мобильных сайтов"/> <p> <div id="zcbclk188751"></div> <div id="zcbclk188751"></div> </p></body></html>

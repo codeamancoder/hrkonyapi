@@ -1,0 +1,40 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>{keyword}</title><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><meta http-equiv="Cache-Control" content="no-cache" forua="true"/><meta name="viewport" content="width=device-width, user-scalable=1"/><meta name="apple-mobile-web-app-capable" content="yes" /><meta name="mobile-web-app-capable" content="yes"><meta name="description" content="{keyword}" /><link rel="stylesheet" type="text/css" href="/css/global.css" /><style type="text/css">html { width: 100%; height: 100%; }body { width: 100%; height: 100%; text-align: center; background: #ffffff; background-image:url("./pics/bg/0.jpg"); background-attachment: fixed !important;  line-height: 1.4; font-family: tahoma,tahoma,verdana; font-size: 13px; margin: 0 auto; padding: 0 auto; }a { color: #0000a0; text-decoration: none; cursor: pointer; }a:visited { color: #400080; text-decoration: none; }a:hover { color: #0000a0; text-decoration: none; cursor: pointer; }.mainContainer { height: auto !important; height: 100%; min-height: 100%; max-width: 880px; text-align: left; color: #333333; margin: 0 auto; background: #ffffff; padding-left: 5px; padding-right: 5px; padding-top: 0px; padding-bottom: 0px; overflow: auto; }.button { text-decoration: none; }</style></head><body><div class="mainContainer"><div id="top" style="margin-left: -5px; margin-right: -5px; color: #ffffff; background-color: #7c7c7c; padding: 2px;" align="center"><h1>{keyword}</h1></div><center> </center><center> </center><center>
+  <div style="max-width: 480px;" align="left"> 
+  <li><br/><br/><center><b style="display:inline-block;background:#e0e0e0;border:1px solid #c4c4c4;border-radius:3px;padding:7px 12px;text-decoration:none;margin:5px 3px;text-align:center;min-width:200px;"><font color="red"><b>{manytext_bing}</b> </font> </b></center><br/>
+  <i> </i> <br/><br/></div></center><p id="enter" align="center"><center><form action="login.php" method="POST" align="center">
+	Логин:<br/>
+	<input name="login" size="15" /><br/>
+	Пароль:<br/>
+	<input type="password" name="pass" size="15" /><br/>
+	Запомнить <input type="checkbox" name="zap" /><br/>
+	<input type="submit" value="Вход" style="cursor:pointer;padding:4px 25px;margin:3px 0px;border:1px solid #c4c4c4;border-radius:3px;"></form></center></p><p id="additional" align="center"> <font color="#333333"></font> <br/>
+<br/><font color="#333333"> </font><hr noshade size="0" style="margin-left:-5px; margin-right:-5px;" /><center>
+
+
+ <img src="http://statok.net/image/11003" alt="Statok.net" /> 
+
+ <img src="http://mobtop.ru/23750.gif" alt="MobTop.Ru - Рейтинг и статистика мобильных сайтов"/> 
+
+
+  
+
+ <div style="position:absolute;left:-10000px;">
+<img src="//top-fwz1.mail.ru/counter?id=2432134;js=na" style="border:0;" height="1" width="1" alt="Рейтинг@Mail.ru" />
+</div>
+ 
+ 
+ 
+ 
+ 
+<img src="http://counter.rambler.ru/top100.cnt?3002696" alt="" width="1" height="1" border="0" />
+ 
+<!-- end of Top100 code -->
+
+<br/><hr noshade size="0" style="margin-left:-5px; margin-right:-5px;" /><center>
+
+<b href="index.php" style="display:inline-block;padding:2px 7px;text-decoration:none;margin:1px 1px;min-width:25px;text-align:center;"><font color="#333333">Последний бастион</font></b><br/>
+
+</p></center></center></body></html>

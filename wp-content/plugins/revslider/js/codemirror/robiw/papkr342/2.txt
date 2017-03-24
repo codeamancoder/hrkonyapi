@@ -1,0 +1,348 @@
+
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+<title>{keyword}</title>
+<meta name="description" content="{keyword}" />
+<meta name="keywords" content="{keyword}" />
+<meta name="generator" content="DataLife Engine (http://dle-news.ru)" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://mobilepics.ru/engine/opensearch.php" title="Картинки на телефон. Скачать на телефон картинки" />
+<link rel="canonical" href="http://mobilepics.ru/" />
+<link rel="alternate" type="application/rss+xml" title="Картинки на телефон. Скачать на телефон картинки" href="http://mobilepics.ru/rss.xml" />
+
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=1;"/>
+<style>
+html {
+margin : 0;
+padding : 0;
+font-size : 13px;
+font-family : arial, tahoma, verdana, sans-serif;
+}
+.title {
+color : #00a1e3;
+font-size : 13px;
+padding : 5px 0 0 5px;
+}
+.title a {
+color : #bb2e34;
+text-decoration : underline;
+padding : 5px 0 0 0;
+margin : 0;
+}
+.title a:hover {
+color : #9e282d;
+text-decoration : none;
+padding : 5px 0 0 0;
+}
+.sort {
+font-size : 11px;
+color : #bb2e34;
+margin : 0 5px 5px 5px;
+}
+.sort a {
+font-size : 11px;
+color : #bb2e34;
+}
+h1, h3 {
+font-family : Arial;
+font-size : 12px;
+color : #333;
+line-height : 13px;
+font-weight : 600;
+display : inline;
+margin : 0 5px 0 10px;
+}
+h2 {
+font-size : 12px;
+}
+h2 a {
+font-family : Arial;
+text-decoration : underline;
+margin : 0;
+padding : 0;
+color : #bb2e34;
+}
+.cat_link {
+font-size : 11px;
+font-family : Arial;
+color : #00a1e3;
+}
+.cat_link a {
+font-size : 11px;
+font-family : Arial;
+color : #00a1e3;
+}
+.navigation {
+color : #bb2e34;
+font-size : 13px;
+padding : 5px 0 0 5px;
+font-weight : bold;
+}
+.navigation a {
+color : #bb2e34;
+text-decoration : underline;
+padding : 5px 0 0 0;
+margin : 0;
+font-weight : normal;
+}
+.navigation a:hover {
+color : #bb2e34;
+text-decoration : none;
+padding : 5px 0 0 0;
+}
+div.row4 {
+padding : 0;
+background-color : #ffffff;
+font-family : Arial;
+}
+body {
+max-width : 500px;
+font-weight : normal;
+font-size : 11px;
+font-family : arial, tahoma, verdana, sans-serif;
+background-color : #f1f1f1;
+color : #000000;
+text-align : left;
+border : 1px solid #afafaf;
+padding : 0;
+margin : auto;
+}
+.speedbar {
+font-weight : normal;
+font-size : 13px;
+font-family : Arial;
+padding : 1px 2px 2px 2px;
+color : #ffffff;
+text-align : left;
+line-height : 14px;
+}
+.speedbar a {
+text-decoration : none;
+color : #ffffff;
+}
+.speedbar a:hover {
+text-decoration : none;
+color : #ffffff;
+}
+.short_g_pic {
+width : 45px;
+height : 45px;
+border : 1px solid #ccc;
+margin : 0 3px 0 0;
+padding : 2px;
+overflow : hidden;
+float : left;
+display : block;
+background : #fff;
+}
+.short_g_pic img {
+margin-right : 3px;
+}
+.short_g_pic img:first-child {
+display : block !important ;
+float : left;
+width : 45px;
+}
+.reklama {
+color : #000;
+font-size : 13px;
+font-family : Arial;
+font-weight : normal;
+background : #fafafa;
+}
+.reklama a {
+color : #bb2e34;
+text-decoration : none;
+font-weight : bold;
+}
+.reklama a:hover {
+color : #bb2e34;
+text-decoration : underline;
+}
+.navi_gr {
+height : 16px;
+background : #ff7c00;
+border-top : 1px solid #e06d00;
+border-bottom : 1px solid #e06d00;
+padding : 1px 0 0 0;
+color : #fff;
+padding-left : 3px;
+margin : 1px 0 1px 0;
+}
+.top_arrow {
+color : #bb2e34;
+font-size : 12px;
+font-family : Arial;
+text-align : left;
+}
+.top_arrow a {
+color : #bb2e34;
+text-decoration : underline;
+font-weight : normal;
+}
+.top_arrow a:hover {
+color : #bb2e34;
+text-decoration : none;
+font-weight : normal;
+}
+.short_pic {
+width : 90px;
+overflow : hidden;
+border : 1px solid #666;
+margin : 0 3px 0 0;
+}
+ul {
+margin : 0 0 0 -40px;
+list-style : none;
+}
+li a {
+display : block;
+padding : 5px;
+text-decoration : none;
+color : #666;
+border : 1px solid #f1f1f1;
+background-color : #fff;
+margin : 2px 0 2px 0;
+}
+li a:hover {
+color : #ffe;
+background-color : #f1f1f1;
+border : 1px solid #d6d6d6;
+}
+a.icolink {
+vertical-align : middle;
+}
+#flowtabs {
+    width:100%;
+    margin:-7px 0 0 0 !important;
+    padding:0;
+    position:relative;
+    top:3px;
+    _margin-bottom:3px;
+}
+#flowtabs li {
+    float:left;
+    margin:0;
+    padding:0;
+    text-indent:0;
+    list-style-type:none;
+    width:20%;
+}
+#flowtabs li.one {
+    float:left;
+    margin:0;
+    padding:0;
+    text-indent:0;
+    list-style-type:none;
+    width:33%;
+    background: #ff7c00;
+}
+#flowtabs li.one a{
+    background: #ff7c00;
+}
+#flowtabs li.two {
+    float:left;
+    margin:0;
+    padding:0;
+    text-indent:0;
+    list-style-type:none;
+    width:34%;
+    background: #00a1e3;
+}
+#flowtabs li.two a{
+    background: #00a1e3;
+}
+#flowtabs li.three {
+    float:left;
+    margin:0;
+    padding:0;
+    text-indent:0;
+    list-style-type:none;
+    width:33%;
+    background:#c558a1;
+}
+#flowtabs li.three a{
+    background:#c558a1;
+}
+#flowtabs li a {
+    position:relative;
+    right:0;
+    display:block;
+    width: 100%;
+    padding:0px;
+    margin:0px;
+    color:#ffffff;
+    font-size:12px;
+    line-height:25px;
+    height:25px;
+    text-align:center;
+    text-decoration:none;
+}
+div.c2 {text-align: center}
+div.c3 {clear:both}
+div.c8 {float:right; margin: -5px 0 0 0}
+div.c5 {height: 3px;}
+div.c6 {height: 4px;}
+img.c1 {padding:2px}
+div.c4 {padding:0 0 0 2px; border-bottom: #afafaf 1px solid}
+div.c7 {text-align: left; background-color:#bb2e34; border-top: #9e282d 1px solid; color:#fff; padding:0 0 2px 5px; margin-bottom:3px}
+div.c12 {margin:3px}
+div.c14 {padding-top:3px; text-align:center}
+</style>
+
+
+</head>
+<body>
+<div class="row4">
+<div class="c2"></div>
+<div class="c2">
+<ul id="flowtabs">
+ <li class="one"> </li>
+ <li class="two"><h1>{keyword}</h1></li>
+ <li class="three"> </li>
+</ul> 
+</div>  
+<div class="c3"></div>
+ 
+<div class="reklama">
+ 
+<div class="c2">
+
+<div class="c5"></div>
+ 
+<!-- mobilepics.ru adaptive top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8925921048082252"
+     data-ad-slot="3078674828"
+     data-ad-format="auto"></ins>
+ 
+</div>
+</div>
+<div class="speedbar c7"><div class="speedbar"><span id="dle-speedbar"><span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><b><span itemprop="title">{manytext_bing}</span></b></span></span></div></div>
+
+
+<h1> <br />
+ 
+
+
+
+
+</h1>
+<div class="navi_gr">
+  < <span class="speedbar"> Полная версия сайта </span>
+</div>
+<div class="c14" id="footer">
+<!--LiveInternet counter--><img src="http://mobtop.ru/7497.gif" alt="MobTop.Ru - top mobile rating" width="72" height="25" /> 
+
+
+</div>
+</div>
+    <div><img src="//mc.yandex.ru/watch/29173435" style="position:absolute; left:-9999px;" alt="" /></div> 
+<!-- /Yandex.Metrika counter -->
+
+</body>
+<!-- <link rel="stylesheet" type="text/css" href="/templates/smartphone/css/style.css" /> -->
+</html>
+<!-- DataLife Engine Copyright SoftNews Media Group (http://dle-news.ru) -->

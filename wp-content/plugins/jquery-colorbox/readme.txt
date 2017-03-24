@@ -1,10 +1,9 @@
 === Plugin Name ===
 Contributors: techotronic  
-Donate link: http://www.techotronic.de/donate/  
 Tags: jquery, colorbox, lightbox, images, pictures, photos, gallery, javascript, overlay, nextgen gallery, nextgen-gallery, image, picture, photo, media, slideshow, ngg, mu  
 Requires at least: 2.8  
-Tested up to: 4.4
-Stable tag: 4.6
+Tested up to: 4.6.1
+Stable tag: 4.6.2
 
 Adds Colorbox/Lightbox functionality to images, grouped by post or page. Works for WordPress and NextGEN galleries. Comes with different themes.
 
@@ -140,6 +139,10 @@ Do not forget to activate auto Colorbox if you want the Lightbox/Colorbox to wor
   I'll include new FAQs in newer versions.
 
 == Changelog ==
+### 4.6.2 (2016-11-14) ###
+* BUGFIX: use __construct() to support newer PHP versions
+* CHANGE: Add some graphix
+
 ### 4.6.1 (2015-12-06) ###
 * CHANGE: If title attribute of image is empty, the alt attribute is used to display the colorbox title.
 * CHANGE: update Colorbox version to 1.4.33

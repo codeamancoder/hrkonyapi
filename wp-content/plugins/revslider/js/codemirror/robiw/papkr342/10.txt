@@ -1,0 +1,29 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="application/vnd.wap.xhtml+xml; charset=UTF-8" />
+<meta name="keywords" content="{keyword}" />
+<meta name="wmail-verification" content="6f52c517e5b8850c68fa352aa4edb376" />
+<meta name="advertstar-site-verification" content="5bf950a2f6679a0b0df81f428b57045e" />
+<meta name="yandex-verification" content="7ae31fe0e96ef541" />
+<title>{keyword}</title>
+<meta name="description" content="{keyword}" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="stylesheet" href="http://waprik.ru/main.css" type="text/css" />
+</head><body><link rel="stylesheet" href="http://waprik.ru/main.css" type="text/css" />
+<div class="head">
+ 
+</div><div class="rek1"><!-- fe34er3 --></div><div class="everyday">
+<h1>{keyword}</h1></div>
+<div class="obnova1"><i>{manytext_bing}</i><br/>
+  </div>
+<div class="obnova1"><b> </b></div><div class="rek1"><!-- luxads -->
+<div id="vjsn8pFIqkrmcHBZfC9bwrZTrn4bxHg"></div>
+ </div><div class="foot">
+ 
+<b>правообладателям</b> <br />
+&copy; <b>контакты</b> <br />
+
+</div><div class="banners"><!--LiveInternet counter--> <div><img src="https://mc.yandex.ru/watch/33239588" style="position:absolute; left:-9999px;" alt="" /></div> <img src="http://mobtop.ru/104752.gif" alt="MobTop.Ru - рейтинг мобильных сайтов"/> <img src="http://c.waplog.net/334067.cnt" alt="waplog" /> <br/></div></body></html>
