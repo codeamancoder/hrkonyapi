@@ -20,10 +20,10 @@
 
 define('DISALLOW_FILE_EDIT', true);
 
-define('DB_NAME', 'srkn_hrknyap');
+define('DB_NAME', 'herkon_hrknyap');
 
 /** MySQL veritabanı kullanıcısı */
-define('DB_USER', 'srkn_hrknyap');
+define('DB_USER', 'herkon_hrknyap');
 
 /** MySQL veritabanı parolası */
 define('DB_PASSWORD', 'inSdArbG');
