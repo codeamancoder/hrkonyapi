@@ -2,9 +2,9 @@
 Contributors: naa986
 Donate link: https://wphowto.net/
 Tags: smtp, mail, mailer, phpmailer, wp_mail, email
-Requires at least: 4.7
-Tested up to: 4.7
-Stable tag: 1.0.3
+Requires at least: 4.8
+Tested up to: 4.9
+Stable tag: 1.0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,6 +13,10 @@ Configure a SMTP server to send email from your WordPress site. Configure the wp
 == Description ==
 
 [SMTP Mailer](https://wphowto.net/smtp-mailer-plugin-for-wordpress-1482) plugin allows you to configure a mail server which handles all outgoing email from your website. It takes control of the wp_mail function and use SMTP instead.
+
+= Requirements =
+
+* A self-hosted website running on [WordPress hosting](https://wphowto.net/best-cheap-wordpress-hosting-1689)
 
 = SMTP Mailer Settings =
 
@@ -61,12 +65,20 @@ Yes.
 
 == Screenshots ==
 
-For screenshots please visit the [SMTP Mailer](https://wphowto.net/smtp-mailer-plugin-for-wordpress-1482) plugin page
+1. SMTP Mailer Settings
+2. SMTP Mailer Test Email Tab
 
 == Upgrade Notice ==
 none
 
 == Changelog ==
+
+= 1.0.5 =
+* SMTP Mailer is now compatible with WordPress 4.9.
+
+= 1.0.4 =
+* Updated the mail() function by setting its minimum requirements to WordPress 4.8.
+* "phpmailer_init" action hook is now enabled so it can be used by other plugins.
 
 = 1.0.3 =
 * Fixed a bug where an apostrophe in the password would cause SMTP authentication failure.

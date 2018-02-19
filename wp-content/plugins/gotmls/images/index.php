@@ -20,7 +20,7 @@ else
 GOTMLS_define("GOTMLS_require_version", "3.3");
 
 if (!function_exists("__")) {
-function __($text, $domain) {
+function __($text, $domain = "gotmls") {
 	return $text;
 }}
 
@@ -93,28 +93,6 @@ function GOTMLS_decode($encoded_string) {
 		return "Cannot decode: $encoded_string";
 }}
 
-if (isset($_GET["SESSION"]) && is_numeric($_GET["SESSION"]) && preg_match('|(.*?/gotmls\.js\?SESSION=)|', GOTMLS_script_URI, $match)) {
-	header("Content-type: text/javascript");
-	if (is_file(GOTMLS_plugin_path."safe-load/session.php"))
-		require_once(GOTMLS_plugin_path."safe-load/session.php");
-	if (isset($_SESSION["GOTMLS_SESSION_TEST"])) 
-		die("/* GOTMLS SESSION PASS */\nif('undefined' != typeof stopCheckingSession && stopCheckingSession)\n\tclearTimeout(stopCheckingSession);\nshowhide('GOTMLS_patch_searching', true);\nif (autoUpdateDownloadGIF = document.getElementById('autoUpdateDownload'))\n\tdonationAmount = autoUpdateDownloadGIF.src.replace(/^.+\?/,'');\nif ((autoUpdateDownloadGIF.src == donationAmount) || donationAmount=='0') {\n\tif (patch_searching_div = document.getElementById('GOTMLS_patch_searching')) {\n\t\tif (autoUpdateDownloadGIF.src == donationAmount)\n\t\t\tpatch_searching_div.innerHTML = '<span style=\"color: #F00;\">".__("You must register and donate to use this feature!",'gotmls')."</span>';\n\t\telse\n\t\t\tpatch_searching_div.innerHTML = '<span style=\"color: #F00;\">".__("This feature is available to those who have donated!",'gotmls')."</span>';\n\t}\n} else {\n\tshowhide('GOTMLS_patch_searching');\n\tshowhide('GOTMLS_patch_button', true);\n}\n");
-	else {
-		$_SESSION["GOTMLS_SESSION_TEST"] = $_GET["SESSION"] + 1;
-		if ($_GET["SESSION"] > 0)
-			die("/* GOTMLS SESSION FAIL */\nif('undefined' != typeof stopCheckingSession && stopCheckingSession)\n\tclearTimeout(stopCheckingSession);\ndocument.getElementById('GOTMLS_patch_searching').innerHTML = '<div class=\"error\">".__("Your Server could not start a Session!",'gotmls')."</div>';");
-		else
-			die("/* GOTMLS SESSION TEST */\nif('undefined' != typeof stopCheckingSession && stopCheckingSession)\n\tclearTimeout(stopCheckingSession);\nstopCheckingSession = checkupdateserver('".$match[0].$_SESSION["GOTMLS_SESSION_TEST"]."', 'GOTMLS_patch_searching');");
-	}
-} elseif ((isset($_SERVER["DOCUMENT_ROOT"]) && ($SCRIPT_FILE = str_replace($_SERVER["DOCUMENT_ROOT"], "", isset($_SERVER["SCRIPT_FILENAME"])?$_SERVER["SCRIPT_FILENAME"]:isset($_SERVER["SCRIPT_NAME"])?$_SERVER["SCRIPT_NAME"]:"")) && strlen($SCRIPT_FILE) > strlen("/".basename(__FILE__)) && substr(__FILE__, -1 * strlen($SCRIPT_FILE)) == substr($SCRIPT_FILE, -1 * strlen(__FILE__))) || !defined("GOTMLS_plugin_path")) {
-	header("Content-type: image/gif");
-	$img_src = GOTMLS_local_images_path.'GOTMLS-16x16.gif';
-	if (!(file_exists($img_src) && $img_bin = @file_get_contents($img_src)))
-		$img_bin = GOTMLS_decode('R=lGODlhEAAQAIABAAAAAP___yH5BAEAAAEALAAAAAAQABAAAAIshB=Qm-eo2HuJNWdrjlFm3S2hKB7kViKaxZmr98YgSo_jzH6tiU=974MADwUAOw2');
-	die($img_bin);
-} elseif (isset($_GET["no_error_reporting"]))
-	@error_reporting(0);
-
 GOTMLS_define("GOTMLS_Failed_to_list_LANGUAGE", __("Failed to list files in directory!",'gotmls'));
 GOTMLS_define("GOTMLS_Run_Quick_Scan_LANGUAGE", __("Quick Scan",'gotmls'));
 GOTMLS_define("GOTMLS_View_Quarantine_LANGUAGE", __("View Quarantine",'gotmls'));
@@ -124,7 +102,17 @@ GOTMLS_define("GOTMLS_Scan_Settings_LANGUAGE", __("Scan Settings",'gotmls'));
 GOTMLS_define("GOTMLS_Loading_LANGUAGE", __("Loading, Please Wait ...",'gotmls'));
 GOTMLS_define("GOTMLS_Automatically_Fix_LANGUAGE", __("Automatically Fix SELECTED Files Now",'gotmls'));
 
-if (function_exists("get_option")) {
+if (!defined("ABSPATH")) {
+	define("ABSPATH", dirname(dirname(__FILE__)).'/safe-load/');
+	$root_path = dirname(ABSPATH);
+	while (strlen($root_path) > 1 && !is_file($root_path."/wp-config.php"))
+		$root_path = dirname($root_path);
+	if (is_file($root_path."/wp-config.php"))
+		include_once($root_path."/wp-config.php");
+	else
+		die("No wp-config!");
+}
+
 function GOTMLS_update_option($index, $value = array()) {
 	return update_option('GOTMLS_'.$index.'_blob', GOTMLS_encode(serialize($value)));
 }
@@ -136,24 +124,22 @@ function GOTMLS_get_option($index, $value = array()) {
 		$tmp = $value;
 	return unserialize(GOTMLS_decode(get_option('GOTMLS_'.$index.'_blob', GOTMLS_encode(serialize($tmp)))));
 }
-	$GLOBALS["GOTMLS"]["tmp"]["nonce"] = get_option('GOTMLS_nonce_array', array());
-	$GLOBALS["GOTMLS"]["tmp"]["settings_array"] = get_option('GOTMLS_settings_array', array());
-	$GLOBALS["GOTMLS"]["tmp"]["definitions_array"] = GOTMLS_get_option('definitions', $GLOBALS["GOTMLS"]["tmp"]["definitions_array"]);
-	GOTMLS_define("GOTMLS_siteurl", get_option("siteurl"));
-	$GLOBALS["GOTMLS"]["log"] = get_option('GOTMLS_scan_log/'.(isset($_SERVER["REMOTE_ADDR"])?$_SERVER["REMOTE_ADDR"]:"0.0.0.0").'/'.$GLOBALS["GOTMLS"]["tmp"]["mt"], array());
-	if (!(isset($GLOBALS["GOTMLS"]["log"]["settings"]) && is_array($GLOBALS["GOTMLS"]["log"]["settings"])))
-		$GLOBALS["GOTMLS"]["log"]["settings"] = $GLOBALS["GOTMLS"]["tmp"]["settings_array"];
-} else {
-	GOTMLS_define("GOTMLS_siteurl", $GLOBALS["GOTMLS"]["tmp"]["protocol"].$SERVER_parts[1].((count($SERVER_parts) > 2 && ($SERVER_parts[2] == '80' || $SERVER_parts[2] == '443'))?"":":".$SERVER_parts[2])."/");
-	$GLOBALS["GOTMLS"]["log"] = array();
-	$GLOBALS["GOTMLS"]["tmp"]["settings_array"] = array();
-}
+$GOTMLS_chmod_file = (0644);
+$GOTMLS_chmod_dir = (0755);
+$GLOBALS["GOTMLS"]["tmp"]["nonce"] = get_option('GOTMLS_nonce_array', array());
+$GLOBALS["GOTMLS"]["tmp"]["settings_array"] = get_option('GOTMLS_settings_array', array());
+$GLOBALS["GOTMLS"]["tmp"]["definitions_array"] = GOTMLS_get_option('definitions', $GLOBALS["GOTMLS"]["tmp"]["definitions_array"]);
+GOTMLS_define("GOTMLS_siteurl", get_option("siteurl", $GLOBALS["GOTMLS"]["tmp"]["protocol"].$SERVER_parts[1].((count($SERVER_parts) > 2 && ($SERVER_parts[2] == '80' || $SERVER_parts[2] == '443'))?"":":".$SERVER_parts[2])."/"));
+$GLOBALS["GOTMLS"]["log"] = get_option('GOTMLS_scan_log/'.(isset($_SERVER["REMOTE_ADDR"])?$_SERVER["REMOTE_ADDR"]:"0.0.0.0").'/'.$GLOBALS["GOTMLS"]["tmp"]["mt"], array());
+if (!(isset($GLOBALS["GOTMLS"]["log"]["settings"]) && is_array($GLOBALS["GOTMLS"]["log"]["settings"])))
+	$GLOBALS["GOTMLS"]["log"]["settings"] = $GLOBALS["GOTMLS"]["tmp"]["settings_array"];
+
 GOTMLS_define("GOTMLS_installation_key", md5(GOTMLS_siteurl));
-GOTMLS_define("GOTMLS_update_home", "http://updates.gotmls.net/".GOTMLS_installation_key."/");
+GOTMLS_define("GOTMLS_update_home", "//updates.gotmls.net/".GOTMLS_installation_key."/");
 
 if (!function_exists("GOTMLS_Invalid_Nonce")) {
 function GOTMLS_Invalid_Nonce($pre = "//Error: ") {
-	return $pre.__("Invalid or expired Nonce Token!",'gotmls').(isset($_REQUEST["GOTMLS_mt"])?(" ".$_REQUEST["GOTMLS_mt"].((strlen($_REQUEST["GOTMLS_mt"]) == 32)?(isset($GLOBALS["GOTMLS"]["tmp"]["nonce"][$_REQUEST["GOTMLS_mt"]])?$GLOBALS["GOTMLS"]["tmp"]["nonce"][$_REQUEST["GOTMLS_mt"]]:" !found"):" !len(".strlen($_REQUEST["GOTMLS_mt"]).")")):" GOTMLS_mt !set");
+	return $pre.__("Invalid or expired Nonce Token!",'gotmls').(isset($_REQUEST["GOTMLS_mt"])?(htmlspecialchars($_REQUEST["GOTMLS_mt"]).((strlen($_REQUEST["GOTMLS_mt"]) == 32)?(isset($GLOBALS["GOTMLS"]["tmp"]["nonce"][$_REQUEST["GOTMLS_mt"]])?$GLOBALS["GOTMLS"]["tmp"]["nonce"][$_REQUEST["GOTMLS_mt"]]:" !found"):" !len(".strlen($_REQUEST["GOTMLS_mt"]).")")):" GOTMLS_mt !set");
 }}
 
 if (!function_exists("GOTMLS_set_nonce")) {
@@ -162,7 +148,7 @@ function GOTMLS_set_nonce($context = "NULL") {
 	$transient_name = md5(GOTMLS_installation_key.GOTMLS_plugin_path.$hour);
 	foreach ($GLOBALS["GOTMLS"]["tmp"]["nonce"] as $nonce_key => $nonce_value)
 		if (($nonce_value + 24) < $hour)
-			unset($GLOBALS["GOTMLS"]["tmp"]["nonce"][$nonce_value]);
+			unset($GLOBALS["GOTMLS"]["tmp"]["nonce"][$nonce_key]);
 	if (!isset($GLOBALS["GOTMLS"]["tmp"]["nonce"][$transient_name])) {
 		$GLOBALS["GOTMLS"]["tmp"]["nonce"][$transient_name] = $hour;
 		if (!update_option('GOTMLS_nonce_array', $GLOBALS["GOTMLS"]["tmp"]["nonce"]))
@@ -186,6 +172,194 @@ function GOTMLS_get_nonce() {
 	} else
 		return false;
 }}
+if (isset($_GET["SESSION"]) && is_numeric($_GET["SESSION"]) && preg_match('|(.*?/gotmls\.js\?SESSION=)|', GOTMLS_script_URI, $match)) {
+	header("Content-type: text/javascript");
+	if (is_file(GOTMLS_plugin_path."safe-load/session.php"))
+		require_once(GOTMLS_plugin_path."safe-load/session.php");
+	if (isset($_SESSION["GOTMLS_SESSION_TEST"])) 
+		die("/* GOTMLS SESSION PASS */\nif('undefined' != typeof stopCheckingSession && stopCheckingSession)\n\tclearTimeout(stopCheckingSession);\nshowhide('GOTMLS_patch_searching', true);\nif (autoUpdateDownloadGIF = document.getElementById('autoUpdateDownload'))\n\tdonationAmount = autoUpdateDownloadGIF.src.replace(/^.+\?/,'');\nif ((autoUpdateDownloadGIF.src == donationAmount) || donationAmount=='0') {\n\tif (patch_searching_div = document.getElementById('GOTMLS_patch_searching')) {\n\t\tif (autoUpdateDownloadGIF.src == donationAmount)\n\t\t\tpatch_searching_div.innerHTML = '<span style=\"color: #F00;\">".__("You must register and donate to use this feature!",'gotmls')."</span>';\n\t\telse\n\t\t\tpatch_searching_div.innerHTML = '<span style=\"color: #F00;\">".__("This feature is available to those who have donated!",'gotmls')."</span>';\n\t}\n} else {\n\tshowhide('GOTMLS_patch_searching');\n\tshowhide('GOTMLS_patch_button', true);\n}\n");
+	else {
+		$_SESSION["GOTMLS_SESSION_TEST"] = $_GET["SESSION"] + 1;
+		if ($_GET["SESSION"] > 0)
+			die("/* GOTMLS SESSION FAIL */\nif('undefined' != typeof stopCheckingSession && stopCheckingSession)\n\tclearTimeout(stopCheckingSession);\ndocument.getElementById('GOTMLS_patch_searching').innerHTML = '<div class=\"error\">".__("Your Server could not start a Session!",'gotmls')."</div>';");
+		else
+			die("/* GOTMLS SESSION TEST */\nif('undefined' != typeof stopCheckingSession && stopCheckingSession)\n\tclearTimeout(stopCheckingSession);\nstopCheckingSession = checkupdateserver('".$match[0].$_SESSION["GOTMLS_SESSION_TEST"]."', 'GOTMLS_patch_searching');");
+	}
+} elseif ((isset($_SERVER["DOCUMENT_ROOT"]) && ($SCRIPT_FILE = str_replace($_SERVER["DOCUMENT_ROOT"], "", isset($_SERVER["SCRIPT_FILENAME"])?$_SERVER["SCRIPT_FILENAME"]:isset($_SERVER["SCRIPT_NAME"])?$_SERVER["SCRIPT_NAME"]:"")) && strlen($SCRIPT_FILE) > strlen("/".basename(__FILE__)) && substr(__FILE__, -1 * strlen($SCRIPT_FILE)) == substr($SCRIPT_FILE, -1 * strlen(__FILE__)))) {
+	if (isset($_GET["page"]) && $_GET["page"] == "GOTMLS-View-Quarantine" && isset($_REQUEST["GOTMLS_mt"]) && strlen($_REQUEST["GOTMLS_mt"]) == 32 && isset($GLOBALS["GOTMLS"]["tmp"]["nonce"][$_REQUEST["GOTMLS_mt"]])) {
+$return = (print_r( array("nonce"=>$GLOBALS["GOTMLS"]["tmp"]["nonce"][$_REQUEST["GOTMLS_mt"]],"mt"=>($_REQUEST["GOTMLS_mt"])),1));
+		try {
+			$Q_Paged = '<form method="POST" name="GOTMLS_Form_page"><input type="hidden" id="GOTMLS_paged" name="paged" value="1">';//<div style="float: left;">Page:</div>';
+			$Q_Page = '
+<style>
+#found_Quarantine {
+    line-height: 1.4em;
+    font-size: 13px;
+}
+#GOTMLS-right-sidebar {float: right; margin-right: 0px;}
+span.GOTMLS_date {float: right; width: 135px; white-space: nowrap; font-size: 11px;}
+.GOTMLS_page {float: left; border-radius: 10px; padding: 0 5px;}
+.GOTMLS_quarantine_item {margin: 4px 12px;}
+.rounded-corners {margin: 10px; border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; border: 1px solid #000;}
+.shadowed-box {box-shadow: -3px 3px 3px #666; -moz-box-shadow: -3px 3px 3px #666; -webkit-box-shadow: -3px 3px 3px #666;}
+.sidebar-box {background-color: #CCC;}
+.GOTMLS-scanlog li a {display: none;}
+.GOTMLS-scanlog li:hover a {display: block;}
+.GOTMLS-sidebar-links {list-style: none;}
+.GOTMLS-sidebar-links li img {margin: 3px; height: 16px; vertical-align: middle;}
+.GOTMLS-sidebar-links li {margin-bottom: 0 !important;}
+.popup-box {background-color: #FFC; display: none; position: absolute; left: 0px; z-index: 10;}
+.shadowed-text {text-shadow: #00F -1px 1px 1px;}
+.sub-option {float: left; margin: 3px 5px;}
+.inside p {margin: 10px;}
+.GOTMLS_li, .GOTMLS_plugin li {list-style: none;}
+.GOTMLS_plugin {margin: 5px; background: #cfc; border: 1px solid #0C0; padding: 0 5px; border-radius: 3px;}
+.GOTMLS_plugin.disabled, .GOTMLS_plugin.read-only {background: #9f9; border: 1px solid #0f0;}
+.GOTMLS_plugin.known, .GOTMLS_plugin.backdoor, .GOTMLS_plugin.htaccess, .GOTMLS_plugin.timthumb, .GOTMLS_plugin.errors {background: #f99; border: 1px solid #f00;}
+.GOTMLS_plugin.potential, .GOTMLS_plugin.wp_core, .GOTMLS_plugin.skipdirs, .GOTMLS_plugin.skipped {background: #ffc; border: 1px solid #fc6;}
+.GOTMLS ul li {margin-left: 12px;}
+.GOTMLS h2 {margin: 0 0 10px;}
+.postbox {margin-right: 10px;}
+#pastDonations li {list-style: none;}
+#quarantine_buttons {float: right;}//position: absolute; right: 0px; top: -54px; margin: 0px; padding: 0px;}
+#quarantine_buttons input.button-primary {margin-right: 20px;}
+#main-page-title {
+	background: url("//gravatar.com/avatar/5feb789dd3a292d563fea3b885f786d6?s=64") no-repeat scroll 0 0 transparent;
+	height: 64px;
+	line-height: 58px;
+	margin: 10px 0 0 0;
+	max-width: 600px;
+	padding: 0 110px 0 84px;
+}
+#main-page-title h1 {
+	background: url("//gravatar.com/avatar/8151cac22b3fc543d099241fd573d176?s=64") no-repeat scroll top right transparent;
+	height: 64px;
+	line-height: 32px;
+	margin: 0;
+	padding: 0 84px 0 0;
+	display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+</style>
+<script type="text/javascript">
+function showhide(id) {
+	divx = document.getElementById(id);
+	if (divx) {
+		if (divx.style.display == "none" || arguments[1]) {
+			divx.style.display = "block";
+			divx.parentNode.className = (divx.parentNode.className+"close").replace(/close/gi,"");
+			return true;
+		} else {
+			divx.style.display = "none";
+			return false;
+		}
+	}
+}
+function checkAllFiles(check) {
+	var checkboxes = new Array(); 
+	checkboxes = document["GOTMLS_Form_clean"].getElementsByTagName("input");
+	for (var i=0; i<checkboxes.length; i++)
+		if (checkboxes[i].type == "checkbox")
+			checkboxes[i].checked = check;
+}
+</script>
+			<form method="POST" action="?'.(isset($_SERVER["QUERY_STRING"])&&strlen($_SERVER["QUERY_STRING"])?$_SERVER["QUERY_STRING"]:"page=GOTMLS-View-Quarantine&".GOTMLS_set_nonce(__FUNCTION__."256")).'" target="GOTMLS_iFrame" name="GOTMLS_Form_clean">';
+			if (isset($_REQUEST["id"]) && is_numeric($_REQUEST["id"])) {
+				$my_query = $wpdb->get_results("SELECT * FROM `{$table_prefix}posts` WHERE `post_type` = 'GOTMLS_quarantine' AND `post_status` = 'private' AND `ID` = ".$_REQUEST["id"], ARRAY_A);
+				if (is_array($my_query) && count($my_query) && ($Q_post = $my_query[0]) && isset($Q_post["post_type"]) && $Q_post["post_type"] == "GOTMLS_quarantine" && isset($Q_post["post_status"]) && $Q_post["post_status"] == "private") {
+					$clean_file = $Q_post["post_title"];
+					$GLOBALS["GOTMLS"]["tmp"]["file_contents"] = GOTMLS_decode($Q_post["post_content"]);
+					$fa = "";
+					if (isset($Q_post["post_excerpt"]) && strlen($Q_post["post_excerpt"]) && is_array($GLOBALS["GOTMLS"]["tmp"]["threats_found"] = @unserialize(GOTMLS_decode($Q_post["post_excerpt"])))) {
+						$f = 1;
+						foreach ($GLOBALS["GOTMLS"]["tmp"]["threats_found"] as $threats_found => $threats_name) {
+							list($start, $end, $junk) = explode("-", "$threats_found--", 3);
+							if (strlen($end) > 0 && is_numeric($start) && is_numeric($end)) {
+								if ($start < $end)
+									$fa .= ' <a title="'.htmlspecialchars($threats_name).'" href="javascript:select_text_range(\'ta_file\', '.$start.', '.$end.');">['.$f++.']</a>';
+								else
+									$fa .= ' <a title="'.htmlspecialchars($threats_name).'" href="javascript:select_text_range(\'ta_file\', '.$end.', '.$start.');">['.$f++.']</a>';
+							} else {
+								if (is_numeric($threats_found)) {
+									$threats_found = $threats_name;
+									$threats_name = $f;
+								}
+								$fpos = 0;
+								$flen = 0;
+								$potential_threat = str_replace("\r", "", $threats_found);
+								while (($fpos = strpos(str_replace("\r", "", $GLOBALS["GOTMLS"]["tmp"]["file_contents"]), ($potential_threat), $flen + $fpos)) !== false) {
+									$flen = strlen($potential_threat);
+									$fa .= ' <a title="'.htmlspecialchars($threats_name).'" href="javascript:select_text_range(\'ta_file\', '.($fpos).', '.($fpos + $flen).');">['.$f++.']</a>';
+								}
+							}
+						}
+					}
+					die("\n".'<script type="text/javascript">
+function select_text_range(ta_id, start, end) {
+	var textBox = document.getElementById(ta_id);
+	var scrolledText = "";
+	scrolledText = textBox.value.substring(0, end);
+	textBox.focus();
+	if (textBox.setSelectionRange) {
+		scrolledText = textBox.value.substring(end);
+		textBox.value = textBox.value.substring(0, end);
+		textBox.scrollTop = textBox.scrollHeight;
+		textBox.value = textBox.value + scrolledText;
+		textBox.setSelectionRange(start, end);
+	} else if (textBox.createTextRange) {
+		var range = textBox.createTextRange();
+		range.collapse(true);
+		range.moveStart("character", start);
+		range.moveEnd("character", end);
+		range.select();
+	} else
+		alert("The highlighting function does not work in your browser");
+}
+</script><table style="top: 0px; left: 0px; width: 100%; height: 100%; position: absolute;"><tr><td style="width: 100%"><form style="margin: 0;" method="post" action="?'.GOTMLS_set_nonce(__FUNCTION__."1522").'&page=GOTMLS-View-Quarantine" onsubmit="return confirm(\''.__("Are you sure you want to restore this file from the quarantine?",'gotmls').'\');"><input type="hidden" name="id[]" value="'.$Q_post["ID"].'"><input type="submit" value="RESTORE from Quarantine" style="display: none; background-color: #0C0; float: right;"></form><div id="fileperms" class="shadowed-box rounded-corners" style="display: none; position: absolute; left: 8px; top: 29px; background-color: #ccc; border: medium solid #C00; box-shadow: -3px 3px 3px #666; border-radius: 10px; padding: 10px;"><b>File Details</b><br />encoding: '.(function_exists("mb_detect_encoding")?mb_detect_encoding($GLOBALS["GOTMLS"]["tmp"]["file_contents"]):"Unknown").'<br />size: '.strlen($GLOBALS["GOTMLS"]["tmp"]["file_contents"]).' bytes<br />infected:'.$Q_post["post_modified_gmt"].'<br />quarantined:'.$Q_post["post_date_gmt"].'</div><div style="overflow: auto;"><span onmouseover="document.getElementById(\'fileperms\').style.display=\'block\';" onmouseout="document.getElementById(\'fileperms\').style.display=\'none\';">'.__("File Details:",'gotmls').'</span> ('.$fa.' )</div></td></tr><tr><td style="height: 100%"><textarea id="ta_file" style="width: 100%; height: 100%">'.htmlentities(str_replace("\r", "", $GLOBALS["GOTMLS"]["tmp"]["file_contents"])).'</textarea></td></tr></table>');
+				} else
+					die('<h3>Item NOT Found in Quarantine</h3>');
+			} else {
+				$my_query = $wpdb->get_results("SELECT * FROM `{$table_prefix}posts` WHERE `post_type` = 'GOTMLS_quarantine' AND `post_status` = 'private' ORDER BY `post_date_gmt` DESC", ARRAY_A);
+				if (is_array($my_query) && count($my_query)) {
+					$Q_Page .= '<p id="quarantine_buttons" style="display: none;"><input id="repair_button" type="submit" value="Restore selected files" class="button-primary" style="background-color: #0C0;" onclick="return confirm(\'Are you sure you want to overwrite the previously cleaned files with the selected files in the Quarantine?\'));" /></p><p><b>The following items have been found to contain malicious code, they have been cleaned, and the original infected file contents have been saved here in the Quarantine. The code is safe here and you do not need to do anything further with these files.</b></p>
+					<ul name="found_Quarantine" id="found_Quarantine" class="GOTMLS_plugin known" style="background-color: #ccc; padding: 0;"><h3 style="margin: 8px 12px;">'.(count($my_query)>1?'<input type="checkbox" onchange="checkAllFiles(this.checked); document.getElementById(\'quarantine_buttons\').style.display = \'block\';"> '.sprintf(__("Check all %d",'gotmls'),count($my_query)):"").__(" Items in Quarantine",'gotmls').'<span class="GOTMLS_date">'.__("Quarantined",'gotmls').'</span><span class="GOTMLS_date">'.__("Date Infected",'gotmls').'</span></h3>';
+					$root_path = implode(GOTMLS_slash(), array_slice(GOTMLS_explode_dir(__FILE__), 0, (2 + intval($GLOBALS["GOTMLS"]["tmp"]["settings_array"]["scan_level"])) * -1));
+					foreach ($my_query as $post_a) {
+						$restored = "";
+						$image = "blocked";
+						if (isset($_REQUEST["id"]) && is_array($_REQUEST["id"]) && in_array($post_a["ID"], $_REQUEST["id"])) {
+							$restored = " read-only disabled";
+							if (GOTMLS_file_put_contents($post_a["post_title"], GOTMLS_decode($post_a["post_content"]))) {
+								$post_a["post_modified_gmt"] = date("Y-m-d H:i:s");
+								$image = "checked";
+								$wpdb->query("UPDATE `{$table_prefix}posts` SET `post_status` = 'pending' WHERE `post_type` = 'GOTMLS_quarantine' AND `post_status` = 'private' AND `ID` = ".$post_a["ID"]);
+							}
+						}
+						$Q_Page .= '
+						<li id="GOTMLS_quarantine_'.$post_a["ID"].'" class="GOTMLS_quarantine_item"><span class="GOTMLS_date">'.$post_a["post_date_gmt"].'</span><span class="GOTMLS_date">'.$post_a["post_modified_gmt"].'</span><input'.$restored.' type="checkbox" name="id[]" value="'.$post_a["ID"].'" id="check_'.$post_a["ID"].'" onchange="document.getElementById(\'quarantine_buttons\').style.display = \'block\';" /><img src="'.$image.'.gif" height=16 width=16 alt="Q"><a class="GOTMLS_plugin '.$restored.$post_a["ping_status"].'" target="_blank" href="?page=GOTMLS-View-Quarantine&id='.$post_a["ID"].'&'.GOTMLS_set_nonce(__FUNCTION__."191").'" title="View Quarantined File">'.str_replace($root_path, "...", $post_a["post_title"])."</a></li>\n";
+					}
+					$Q_Page .= "\n</ul>";
+					for ($p = 1; $p <= 0; $p++) {
+						$Q_Paged .= '<input class="GOTMLS_page" type="submit" value="'.$p.'"'.((isset($_POST["paged"]) && $_POST["paged"] == $p) || (!isset($_POST["paged"]) && 1 == $p)?" DISABLED":"").' onclick="document.getElementById(\'GOTMLS_paged\').value = \''.$p.'\';">';
+					}
+				} else
+					$Q_Page .= '<h3>'.__("No Items in Quarantine",'gotmls').'</h3>';
+				$return = "$Q_Paged\n</form><br style=\"clear: left;\" />\n$Q_Page\n</form>\n$Q_Paged\n</form><br style=\"clear: left;\" />\n";
+				die("$return");
+			}
+		} catch (Exception $e) {
+			die('Caught exception: '. $e->getMessage(). "\n");
+		}
+	} else {
+		header("Content-type: image/gif");
+		$img_src = GOTMLS_local_images_path.'GOTMLS-16x16.gif';
+		if (!(file_exists($img_src) && $img_bin = @file_get_contents($img_src)))
+			$img_bin = GOTMLS_decode('R=lGODlhEAAQAIABAAAAAP___yH5BAEAAAEALAAAAAAQABAAAAIshB=Qm-eo2HuJNWdrjlFm3S2hKB7kViKaxZmr98YgSo_jzH6tiU=974MADwUAOw2');
+		die($img_bin);
+	}
+} elseif (isset($_GET["no_error_reporting"]))
+	@error_reporting(0);
 
 if (function_exists("plugins_url"))
 	GOTMLS_define("GOTMLS_images_path", plugins_url('/', __FILE__));
@@ -198,8 +372,6 @@ elseif (isset($_SERVER["SCRIPT_FILENAME"]) && isset($_SERVER["DOCUMENT_ROOT"]) &
 else
 	GOTMLS_define("GOTMLS_images_path", "/wp-content/plugins/update/images/");
 
-$GOTMLS_chmod_file = (0644);
-$GOTMLS_chmod_dir = (0755);
 $GOTMLS_image_alt = array("wait"=>"...", "checked"=>"&#x2714;", "blocked"=>"X", "question"=>"?", "threat"=>"!");
 $GOTMLS_dir_at_depth = array();
 $GOTMLS_dirs_at_depth = array();
@@ -237,7 +409,7 @@ foreach ($GLOBALS["GOTMLS"]["tmp"]["definitions_array"]["firewall"] as $TP => $V
 			elseif (!preg_match($GLOBALS["GOTMLS"]["tmp"]["definitions_array"]["firewall"]["$TP"][$V], $GLOBAL_STRING[$GLOBALS["GOTMLS"]["tmp"]["definitions_array"]["firewall"]["$TP"][$V-1]], $matches))
 				$GLOBALS["GOTMLS"]["detected_attacks"] = "";
 		if ($GLOBALS["GOTMLS"]["detected_attacks"])
-			include(dirname(__FILE__)."/../safe-load/index.php");
+			include(dirname(dirname(__FILE__))."/safe-load/index.php");
 	}
 }
 $GLOBALS["GOTMLS"]["detected_attacks"] = "";
@@ -269,6 +441,12 @@ function GOTMLS_array_recurse($array1, $array2) {
 			$value = GOTMLS_array_recurse($array1[$key], $value);
 		$array1[$key] = $value;
 	}
+	return $array1;
+}
+
+function GOTMLS_array_replace($array1, $array2) {
+	foreach ($array2 as $key => $value)
+		$array1[$key] = $value;
 	return $array1;
 }
 
@@ -309,7 +487,7 @@ function GOTMLS_loaded() {
 
 if (!function_exists("add_action")) {
 	GOTMLS_loaded();
-	GOTMLS_admin_notices();
+//	GOTMLS_admin_notices();
 }
 
 function GOTMLS_fileperms($file) {
@@ -918,6 +1096,8 @@ function GOTMLS_reset_settings($item, $key) {
 
 function GOTMLS_file_put_contents($file, $content) {
 	global $GOTMLS_chmod_file, $GOTMLS_chmod_dir;
+	$chmoded_file = false;
+	$chmoded_dir = false;
 	if ((is_dir(dirname($file)) || @mkdir(dirname($file), $GOTMLS_chmod_dir, true)) && !is_writable(dirname($file)) && ($GOTMLS_chmod_dir = @fileperms(dirname($file))))
 		$chmoded_dir = @chmod(dirname($file), 0777);
 	if (is_file($file) && !is_writable($file) && ($GOTMLS_chmod_file = @fileperms($file)))

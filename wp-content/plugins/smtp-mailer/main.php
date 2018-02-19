@@ -1,10 +1,10 @@
 <?php
 /*
 Plugin Name: SMTP Mailer
-Version: 1.0.3
-Plugin URI: http://wphowto.net/smtp-mailer-plugin-for-wordpress-1482
+Version: 1.0.5
+Plugin URI: https://wphowto.net/smtp-mailer-plugin-for-wordpress-1482
 Author: naa986
-Author URI: http://wphowto.net/
+Author URI: https://wphowto.net/
 Description: Configure a SMTP server to send email from your WordPress site
 Text Domain: smtp-mailer
 Domain Path: /languages 
@@ -16,8 +16,8 @@ if (!defined('ABSPATH')){
 
 class SMTP_MAILER {
     
-    var $plugin_version = '1.0.3';
-    var $phpmailer_version = '5.2.14';
+    var $plugin_version = '1.0.5';
+    var $phpmailer_version = '5.2.22';
     var $plugin_url;
     var $plugin_path;
     
@@ -78,7 +78,7 @@ class SMTP_MAILER {
             'smtp-mailer-settings&action=test-email' => __('Test Email', 'smtp-mailer'),
             'smtp-mailer-settings&action=server-info' => __('Server Info', 'smtp-mailer'),
         );
-        $url = "http://wphowto.net/smtp-mailer-plugin-for-wordpress-1482";
+        $url = "https://wphowto.net/smtp-mailer-plugin-for-wordpress-1482";
         $link_text = sprintf(wp_kses(__('Please visit the <a target="_blank" href="%s">SMTP Mailer</a> documentation page for usage instructions.', 'smtp-mailer'), array('a' => array('href' => array(), 'target' => array()))), esc_url($url));
         echo '<div class="wrap"><h2>SMTP Mailer v' . SMTP_MAILER_VERSION . '</h2>';
         echo '<div class="update-nag">'.$link_text.'</div>';
@@ -444,6 +444,10 @@ if(!function_exists('wp_mail') && is_smtp_mailer_configured()){
 		$to = $atts['to'];
 	}
 
+	if ( !is_array( $to ) ) {
+		$to = explode( ',', $to );
+	}
+
 	if ( isset( $atts['subject'] ) ) {
 		$subject = $atts['subject'];
 	}
@@ -564,10 +568,10 @@ if(!function_exists('wp_mail') && is_smtp_mailer_configured()){
 	}
 
 	// Empty out the values that may be set
-	$phpmailer->ClearAllRecipients();
-	$phpmailer->ClearAttachments();
-	$phpmailer->ClearCustomHeaders();
-	$phpmailer->ClearReplyTos();
+	$phpmailer->clearAllRecipients();
+	$phpmailer->clearAttachments();
+	$phpmailer->clearCustomHeaders();
+	$phpmailer->clearReplyTos();
 
 	// From email and name
 	// If we don't have a name from the input headers
@@ -609,17 +613,23 @@ if(!function_exists('wp_mail') && is_smtp_mailer_configured()){
 	 */
 	$from_name = apply_filters( 'wp_mail_from_name', $from_name );
 
-	$phpmailer->setFrom( $from_email, $from_name, false );
+	try {
+                $phpmailer->setFrom( $from_email, $from_name, false );
+	} catch ( phpmailerException $e ) {
+		$mail_error_data = compact( 'to', 'subject', 'message', 'headers', 'attachments' );
+		$mail_error_data['phpmailer_exception_code'] = $e->getCode();
 
-	// Set destination addresses
-	if ( !is_array( $to ) )
-		$to = explode( ',', $to );
+		/** This filter is documented in wp-includes/pluggable.php */
+		do_action( 'wp_mail_failed', new WP_Error( 'wp_mail_failed', $e->getMessage(), $mail_error_data ) );
+
+		return false;
+	}
 
 	// Set mail's subject and body
 	$phpmailer->Subject = $subject;
 	$phpmailer->Body    = $message;
 
-	// Use appropriate methods for handling addresses, rather than treating them as generic headers
+	// Set destination addresses, using appropriate methods for handling addresses
 	$address_headers = compact( 'to', 'cc', 'bcc', 'reply_to' );
 
 	foreach ( $address_headers as $address_header => $addresses ) {
@@ -718,7 +728,7 @@ if(!function_exists('wp_mail') && is_smtp_mailer_configured()){
 
 	// Set whether it's plaintext, depending on $content_type
 	if ( 'text/html' == $content_type )
-		$phpmailer->IsHTML( true );
+		$phpmailer->isHTML( true );
 
 	// If we don't have a charset from the input headers
 	if ( !isset( $charset ) )
@@ -738,17 +748,17 @@ if(!function_exists('wp_mail') && is_smtp_mailer_configured()){
 	// Set custom headers
 	if ( !empty( $headers ) ) {
 		foreach ( (array) $headers as $name => $content ) {
-			$phpmailer->AddCustomHeader( sprintf( '%1$s: %2$s', $name, $content ) );
+			$phpmailer->addCustomHeader( sprintf( '%1$s: %2$s', $name, $content ) );
 		}
 
 		if ( false !== stripos( $content_type, 'multipart' ) && ! empty($boundary) )
-			$phpmailer->AddCustomHeader( sprintf( "Content-Type: %s;\n\t boundary=\"%s\"", $content_type, $boundary ) );
+			$phpmailer->addCustomHeader( sprintf( "Content-Type: %s;\n\t boundary=\"%s\"", $content_type, $boundary ) );
 	}
 
 	if ( !empty( $attachments ) ) {
 		foreach ( $attachments as $attachment ) {
 			try {
-				$phpmailer->AddAttachment($attachment);
+				$phpmailer->addAttachment($attachment);
 			} catch ( phpmailerException $e ) {
 				continue;
 			}
@@ -760,13 +770,13 @@ if(!function_exists('wp_mail') && is_smtp_mailer_configured()){
 	 *
 	 * @since 2.2.0
 	 *
-	 * @param PHPMailer &$phpmailer The PHPMailer instance, passed by reference.
+	 * @param PHPMailer $phpmailer The PHPMailer instance (passed by reference).
 	 */
-	//do_action_ref_array( 'phpmailer_init', array( &$phpmailer ) );
+	do_action_ref_array( 'phpmailer_init', array( &$phpmailer ) );
 
 	// Send!
 	try {
-		return $phpmailer->Send();
+		return $phpmailer->send();
 	} catch ( phpmailerException $e ) {
 
 		$mail_error_data = compact( 'to', 'subject', 'message', 'headers', 'attachments' );

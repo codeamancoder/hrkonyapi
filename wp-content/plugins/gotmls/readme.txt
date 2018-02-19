@@ -5,10 +5,10 @@ Author URI: http://wordpress.ieonly.com/category/my-plugins/anti-malware/
 Contributors: scheeeli, gotmls
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QZHD8QHZ2E7PE
 Tags: security, firewall, anti-malware, scanner, automatic, repair, remove, malware, virus, threat, hacked, malicious, infection, timthumb, exploit, block, brute-force, wp-login, patch, antimalware, revslider, Revolution Slider
-Version: 4.16.53
-Stable tag: 4.16.53
+Version: 4.17.57
+Stable tag: 4.17.57
 Requires at least: 3.3
-Tested up to: 4.7.2
+Tested up to: 4.9.3
 
 This Anti-Malware scanner searches for Malware, Viruses, and other security threats and vulnerabilities on your server and it helps you fix them.
 
@@ -27,7 +27,7 @@ This Anti-Malware scanner searches for Malware, Viruses, and other security thre
 * Check the integrity of your WordPress Core files.
 * Automatically download new Definition Updates when running a Complete Scan.
 
-Updated February 19th
+Updated February 5th
 
 Register this plugin at [GOTMLS.NET](http://gotmls.net/) and get access to new definitions of "Known Threats" and added features like Automatic Removal, plus patches for specific security vulnerabilities like old versions of timthumb. Updated definition files can be downloaded automatically within the admin once your Key is registered. Otherwise, this plugin just scans for "Potential Threats" and leaves it up to you to identify and remove the malicious ones.
 
@@ -38,6 +38,7 @@ NOTICE: This plugin make call to GOTMLS.NET to check for updates not unlike what
 * Clarus Dignus for design suggestions and graphic design work on the banner image.
 * Jelena Kovacevic and Andrew Kurtis of webhostinghub.com for providing the Spanish translation.
 * Marcelo Guernieri for the Brazilian Portuguese translation.
+* Umut Can Alparslan for the Turkish translation.
 
 == Installation ==
 
@@ -92,6 +93,26 @@ sucuri.net caches their scan results and will not refresh the scan until you cli
 5. The Quarantine showing threats that have been fix already.
 
 == Changelog ==
+
+= 4.17.57 =
+* Updated code for compatibility with WP 4.9.3 (latest release).
+* Fixed registration form and alternate domain for definition updates to work on HTTPS.
+* Fixed the wording on the Title check error message.
+
+= 4.17.44 =
+* Added Title check to make sure it does say you were hacked.
+* Updated code for compatibility with WP 4.8.3 (latest release).
+* Fixed Undefined variable error in Quarantine.
+* Fixed XSS vulnerability in nonce error output.
+
+= 4.17.29 =
+* Changed the definition update URL to only use SSL when required.
+* Updated PayPal form for better domestic IPN compatibility.
+
+= 4.17.28 =
+* Added the Turkish translation thanks to Umut Can Alparslan.
+* Improved the auto update so that old definitions could be phased out and new threat types would be selected by default.
+* Fixed the admin username change feature on multisite installs.
 
 = 4.16.53 =
 * Fixed the details window so that it scrolls to the highlighted code.
@@ -254,69 +275,35 @@ sucuri.net caches their scan results and will not refresh the scan until you cli
 = 4.14.47 =
 * Major upgrade to the protection for wp-login.php Brute-Force attempts.
 * Fixes a bug in setting the permissions for read-only files so that they could still be cleaned.
-
-= 3.15.16 =
 * Fixes a minor bug with pass-by-reference which raises a fatal error in PHP v5.4.
-
-= 3.15.15 =
 * Enhanced the Examine File window with better styles and more info.
 * Changed form submission of encrypted file lists to array values instead of keys.
 * Fixes other minor bugs.
-
-= 3.14.24 =
 * Made the Examine File window sizable.
 * Fixed a few small bugs and removed some old code.
 * Added a link to my new twitter account.
-
-= 3.14.08 =
 * Re-purposed Quick Scan to just scan the most affected areas.
 * Set the registration form to display by defaulted in the definition update section.
 * Fixed a few small bugs in advanced features and directory depth determination.
-
-= 3.13.11 =
 * Fixed a session bug to display the last directory scanned.
 * Fixed a few small cosmetic bugs for WP 3.8.
-
-= 3.12.27 =
 * Added Spanish translation, thanks to Jelena Kovacevic and Andrew Kurtis at webhostinghub.com.
-
-= 3.11.28 =
 * Updated string in the code and added a .pot file to be ready for translation into other languages.
 * Added "Select All" checkbox to Quarantine and a new button to delete items from the Quarantine.
 * Added a trace.php file for advanced session tracking.
-
-= 3.08.31 =
 * Fixed undefined index bug with menu_group item in settings array.
-
-= 3.08.02 =
 * Added support for multisite network admin menu and the ability to restrict admin access.
-
-= 3.07.27 =
 * Fixed a session bug in the progress bar related to the last release.
-
-= 3.07.26 =
 * Fixed a session bug that conflicted with jigoshop. (Thanks dragonflyfla)
-
-= 3.07.19 =
 * Fixed a few bug in the Whitelist definition feature.
 
 = 3.07.06 =
 * Added SSL support for definition updates and registration form.
 * Upgraded the Whitelist feature so the it could not contain duplicates.
-
-= 1.3.05.31 =
 * Downgraded the WP-Login threat and changed it to an opt-in fix.
-
-= 1.3.05.14 =
 * Fixed a bug in the Add to Whitelist feature so the you do not need to update the definitions after whitelisting a file.
-
-= 1.3.05.13 =
 * Added ability to whitelist files.
-
-= 1.3.04.19 =
 * Fixed a major bug in yesterdays release broke the login page on some sites.
-
-= 1.3.04.17 =
 * Added a patch for the wp-login.php brute force attack that has been going around.
 * Created a process to restore files from the Quarantine.
 * Fixed a few other small bugs including path issues on Winblows server.
@@ -358,6 +345,18 @@ sucuri.net caches their scan results and will not refresh the scan until you cli
 * First versions available for WordPress (code removed, no longer compatible).
 
 == Upgrade Notice ==
+
+= 4.17.57 =
+Updated code for compatibility with WP 4.9.3, fixed registration form and alternate domain for definition updates to work on HTTPS, and fixed the wording on the Title Check error message.
+
+= 4.17.44 =
+Added Title check to make sure it does say you were hacked, updated code for compatibility with WP 4.8.3 and fixed Undefined variable error in Quarantine and an XSS vulnerability in nonce error output.
+
+= 4.17.29 =
+Changed the definition update URL to only use SSL when required, and updated PayPal form for better domestic IPN compatibility.
+
+= 4.17.28 =
+Added the Turkish translation thanks to Umut Can Alparslan, improved the auto update feature, and fixed the admin username change feature on multisite installs.
 
 = 4.16.53 =
 Fixed the details window to scrolls to the highlighted code, set default Potential Threat scan to disabled, and encoded definitions array for DB storage.
@@ -468,64 +467,13 @@ Block SoakSoak and other malware from exploiting the Slider Revolution Vulnerabi
 Enabled the Brute-Force protection from the Settings page and fixed window position on small screens.
 
 = 4.14.47 =
-Major upgrade to the protection for Brute-Force attempts, and a bug fix for resetting the permissions of read-only files.
-
-= 3.15.16 =
-Fixes a minor bug with pass-by-reference which raises a fatal error in PHP v5.4.
-
-= 3.15.15 =
-Enhanced the Examine File window with better styles and more info, changed form submission of encrypted file lists, and fixes other minor bugs.
-
-= 3.14.24 =
-Made the Examine File window sizable, fixed a few small bugs, removed some old code, and added a link to twitter.
-
-= 3.14.08 =
-Re-purposed Quick Scan to just scan the most affected areas and fixed a few small bugs.
-
-= 3.13.11 =
-Fixed a session bug to display the last directory scanned and a few other small cosmetic bugs for WP 3.8.
-
-= 3.12.27 =
-Added Spanish translation, thanks to Jelena Kovacevic and Andrew Kurtis.
-
-= 3.11.28 =
-Updated code and added a .pot file for translation into other languages and added more Quarantine options and a file for advanced session tracking.
-
-= 3.08.31 =
-Fixed undefined index bug with menu_group item in settings array.
-
-= 3.08.02 =
-Added support for multisite network admin menu and the ability to restrict admin access.
-
-= 3.07.27 =
-Fixed a session bug in the progress bar related to the last release.
-
-= 3.07.26 =
-Fixed a session bug that conflicted with jigoshop. (Thanks dragonflyfla)
-
-= 3.07.19 =
-Fixed a few bug in the Whitelist definition feature.
+Major upgrade to the protection for Brute-Force attempts, and a bug fix for resetting the permissions of read-only files (Plus many other improvement from v3.X: see Changelog for details).
 
 = 3.07.06 =
-Added SSL support for definition updates and upgraded the Whitelist feature.
-
-= 1.3.05.31 =
-Downgraded the WP-Login threat and changed it to an opt-in fix.
-
-= 1.3.05.14 =
-Fixed a bug in the Add to Whitelist feature so the you do not need to update the definitions after whitelisting a file.
-
-= 1.3.05.13 =
-Added ability to whitelist files.
-
-= 1.3.04.19 =
-Fixed a major bug in yesterdays release broke the login page on some sites.
-
-= 1.3.04.17 =
-Added a patch for the wp-login.php brute force attack and fixed a few other small bugs.
+Added SSL support for definition updates and upgraded the Whitelist feature (Plus many other improvement from v1.3: see Changelog for details).
 
 = 1.3.02.15 =
-Improved security on the Quarantine directory to fix the 500 error on some servers (Plus many other improvement from v1.2: see Changelog for details)
+Improved security on the Quarantine directory to fix the 500 error on some servers (Plus many other improvement from v1.2: see Changelog for details).
 
 = 1.2.03.23 =
 First versions available for WordPress (code removed, no longer compatible).
