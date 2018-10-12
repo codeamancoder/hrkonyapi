@@ -12,6 +12,7 @@ class WPCF7_ConfigValidator {
 	const error_unavailable_names = 107;
 	const error_invalid_mail_header = 108;
 	const error_deprecated_settings = 109;
+	const error_file_not_in_content_dir = 110;
 
 	public static function get_doc_link( $error_code = '' ) {
 		$url = __( 'https://contactform7.com/configuration-errors/',
@@ -285,7 +286,10 @@ class WPCF7_ConfigValidator {
 			// for back-compat
 			$field_name = preg_replace( '/^wpcf7\./', '_', $field_name );
 
-			if ( '_user_agent' == $field_name ) {
+			if ( '_site_admin_email' == $field_name ) {
+				return get_bloginfo( 'admin_email', 'raw' );
+
+			} elseif ( '_user_agent' == $field_name ) {
 				return $example_text;
 
 			} elseif ( '_user_email' == $field_name ) {
@@ -384,11 +388,9 @@ class WPCF7_ConfigValidator {
 			return $this->add_error( $section,
 				self::error_unavailable_names,
 				array(
-					/* translators: %names%: a list of form control names */
-					'message' => _n(
-						"An unavailable name (%names%) is used for form controls.",
-						"Unavailable names (%names%) are used for form controls.",
-						count( $ng_names ), 'contact-form-7' ),
+					'message' =>
+						/* translators: %names%: a list of form control names */
+						__( "Unavailable names (%names%) are used for form controls.", 'contact-form-7' ),
 					'params' => array( 'names' => implode( ', ', $ng_names ) ),
 					'link' => self::get_doc_link( 'unavailable_names' ),
 				)
@@ -466,11 +468,11 @@ class WPCF7_ConfigValidator {
 				continue;
 			}
 
-			if ( ! preg_match( '/^([0-9A-Za-z-]+):(.+)$/', $header, $matches ) ) {
+			if ( ! preg_match( '/^([0-9A-Za-z-]+):(.*)$/', $header, $matches ) ) {
 				$invalid_mail_header_exists = true;
 			} else {
 				$header_name = $matches[1];
-				$header_value = $matches[2];
+				$header_value = trim( $matches[2] );
 
 				if ( in_array( strtolower( $header_name ), $mailbox_header_types ) ) {
 					$this->detect_invalid_mailbox_syntax(
@@ -479,6 +481,8 @@ class WPCF7_ConfigValidator {
 							'message' =>
 								__( "Invalid mailbox syntax is used in the %name% field.", 'contact-form-7' ),
 							'params' => array( 'name' => $header_name ) ) );
+				} elseif ( empty( $header_value ) ) {
+					$invalid_mail_header_exists = true;
 				}
 			}
 		}
@@ -498,6 +502,9 @@ class WPCF7_ConfigValidator {
 		$this->detect_maybe_empty( sprintf( '%s.body', $template ), $body );
 
 		if ( '' !== $components['attachments'] ) {
+			$has_file_not_found = false;
+			$has_file_not_in_content_dir = false;
+
 			foreach ( explode( "\n", $components['attachments'] ) as $line ) {
 				$line = trim( $line );
 
@@ -505,8 +512,15 @@ class WPCF7_ConfigValidator {
 					continue;
 				}
 
-				$this->detect_file_not_found(
-					sprintf( '%s.attachments', $template ), $line );
+				$has_file_not_found = $this->detect_file_not_found(
+					sprintf( '%s.attachments', $template ), $line
+				);
+
+				if ( ! $has_file_not_found && ! $has_file_not_in_content_dir ) {
+					$has_file_not_in_content_dir = $this->detect_file_not_in_content_dir(
+						sprintf( '%s.attachments', $template ), $line
+					);
+				}
 			}
 		}
 	}
@@ -549,6 +563,23 @@ class WPCF7_ConfigValidator {
 						__( "Attachment file does not exist at %path%.", 'contact-form-7' ),
 					'params' => array( 'path' => $content ),
 					'link' => self::get_doc_link( 'file_not_found' ),
+				)
+			);
+		}
+
+		return false;
+	}
+
+	public function detect_file_not_in_content_dir( $section, $content ) {
+		$path = path_join( WP_CONTENT_DIR, $content );
+
+		if ( 0 !== strpos( realpath( $path ), WP_CONTENT_DIR ) ) {
+			return $this->add_error( $section,
+				self::error_file_not_in_content_dir,
+				array(
+					'message' =>
+						__( "It is not allowed to use files outside the wp-content directory.", 'contact-form-7' ),
+					'link' => self::get_doc_link( 'file_not_in_content_dir' ),
 				)
 			);
 		}

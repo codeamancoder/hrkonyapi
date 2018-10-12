@@ -12,7 +12,6 @@ function wpcf7_add_form_tag_acceptance() {
 		'wpcf7_acceptance_form_tag_handler',
 		array(
 			'name-attr' => true,
-			'do-not-store' => true,
 		)
 	);
 }
@@ -38,7 +37,11 @@ function wpcf7_acceptance_form_tag_handler( $tag ) {
 		$class .= ' optional';
 	}
 
-	$atts = $item_atts = array();
+	$atts = array(
+		'class' => trim( $class ),
+	);
+
+	$item_atts = array();
 
 	$item_atts['type'] = 'checkbox';
 	$item_atts['name'] = $tag->name;
@@ -49,6 +52,9 @@ function wpcf7_acceptance_form_tag_handler( $tag ) {
 	if ( $tag->has_option( 'default:on' ) ) {
 		$item_atts['checked'] = 'checked';
 	}
+
+	$item_atts['class'] = $tag->get_class_option();
+	$item_atts['id'] = $tag->get_id_option();
 
 	$item_atts = wpcf7_format_atts( $item_atts );
 
@@ -68,8 +74,6 @@ function wpcf7_acceptance_form_tag_handler( $tag ) {
 			$item_atts );
 	}
 
-	$atts['class'] = $tag->get_class_option( $class );
-	$atts['id'] = $tag->get_id_option();
 	$atts = wpcf7_format_atts( $atts );
 
 	$html = sprintf(
@@ -244,8 +248,7 @@ function wpcf7_tag_generator_acceptance( $contact_form, $args = '' ) {
 	<td>
 		<fieldset>
 		<legend class="screen-reader-text"><?php echo esc_html( __( 'Options', 'contact-form-7' ) ); ?></legend>
-		<label><input type="checkbox" name="default:on" class="option" /> <?php echo esc_html( __( 'Make this checkbox checked by default', 'contact-form-7' ) ); ?></label><br />
-		<label><input type="checkbox" name="invert" class="option" /> <?php echo esc_html( __( 'Make this work inversely', 'contact-form-7' ) ); ?></label>
+		<label><input type="checkbox" name="optional" class="option" checked="checked" /> <?php echo esc_html( __( 'Make this checkbox optional', 'contact-form-7' ) ); ?></label>
 		</fieldset>
 	</td>
 	</tr>
